@@ -58,7 +58,21 @@
 
   <section class="block">
     <h3>Data pipeline</h3>
-    <p>The US Consolidated Screening List is pulled mechanically (free, no key, updated daily) and matched against vendor names and aliases with word-boundary matching; false positives are reviewed and excluded. Curated tables (vendors, products, corporate entities, legal actions, sources) are human-verified against the cited sources. Incident and customer-link curation pass 1 is live: every row carries a named source and a claim-strength label, per the rules above.</p>
+    <p>The US Consolidated Screening List is pulled mechanically (free, no key, updated daily) and matched against vendor names and aliases with word-boundary matching; false positives are reviewed and excluded. Curated tables (vendors, products, corporate entities, legal actions, sources) are human-verified against the cited sources. Incident and customer-link curation passes 1 and 2 are live: every row carries a named source and a claim-strength label, per the rules above.</p>
+  </section>
+
+  <section class="block">
+    <h3>Source verification</h3>
+    <p>Every source URL in ARGUS carries a verification status, recorded in <a class="ext" href="data/source_verification.json" target="_blank" rel="noopener">data/source_verification.json</a> (regenerated 2026-09-24):</p>
+    <ul>
+      <li><strong>4 URLs opened live</strong> and checked against the claims citing them (Citizen Lab: Million Dollar Dissident, Kingdom Came to Canada, The Great iPwn; Amnesty: Omar Radi network-injection report).</li>
+      <li><strong>1 source verified programmatically</strong> — the Consolidated Screening List, via a live pull of 26,144 entries.</li>
+      <li><strong>9 v0 URLs verified verbatim via search</strong> before citing, including both CourtListener dockets.</li>
+      <li><strong>6 URLs corroborated via search snippets</strong> (titles and report contents match); page loads pending.</li>
+      <li><strong>10 new URLs taken from live search listings</strong>; page loads pending a working browser session.</li>
+      <li><strong>2 URLs flagged for a live check</strong> — a third-party mirror of Google TAG's "Buying Spying" report (labeled as a mirror; the official Google URL is still to be located) and the YourStory coverage of Meta's December 2022 threat report.</li>
+    </ul>
+    <p>Known sourcing corrections applied 2026-09-24: the task brief's "Rafael Marques de Morais" Predator claim traced only to a low-quality aggregator and was <em>not</em> added — the verifiable Angola case is Amnesty's forensic confirmation on journalist Teixeira Cândido. The Greek Intellexa conviction is dated <strong>February 2026</strong> (Citizen Lab published March 5, 2026), not March.</p>
   </section>
 </div>
 <footer class="site">

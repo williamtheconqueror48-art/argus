@@ -1,1 +1,322 @@
-[{"id": "src-csl", "license_note": "US government work, public domain.", "published_date": null, "publisher": "International Trade Administration, US Department of Commerce", "retrieved_date": "2026-09-24", "source_type": "government_list", "title": "Consolidated Screening List", "url": "https://www.trade.gov/consolidated-screening-list"}, {"id": "src-whatsapp-docket", "license_note": "Court records, public domain.", "published_date": null, "publisher": "CourtListener / RECAP (Free Law Project)", "retrieved_date": "2026-09-24", "source_type": "court_record", "title": "WhatsApp Inc. v. NSO Group Technologies Limited — case filings (No. 4:19-cv-07123)", "url": "https://www.courtlistener.com/docket/16395340/869/whatsapp-inc-v-nso-group-technologies-limited/"}, {"id": "src-cl-pegasus-predator", "license_note": "Public research report.", "published_date": "2021-12-16", "publisher": "The Citizen Lab, University of Toronto", "retrieved_date": "2026-09-24", "source_type": "research_lab", "title": "Pegasus vs. Predator: Dissident's Doubly-Infected iPhone Reveals Cytrox Mercenary Spyware", "url": "https://citizenlab.ca/2021/12/pegasusvspredatordissidentsdoublyinfectediphonerevealscytroxmercenaryspyware/"}, {"id": "src-cl-torogoz", "license_note": "Public research report.", "published_date": "2022-01-12", "publisher": "The Citizen Lab, University of Toronto", "retrieved_date": "2026-09-24", "source_type": "research_lab", "title": "Project Torogoz: Extensive Hacking of Media & Civil Society in El Salvador with Pegasus Spyware", "url": "https://citizenlab.ca/2022/01/projecttorogozextensivehackingmediacivilsocietyelsalvadorpegasusspyware/"}, {"id": "src-dfrlab-mythical", "license_note": "Public research report with accompanying dataset.", "published_date": "2024-09-04", "publisher": "DFRLab, Atlantic Council", "retrieved_date": "2026-09-24", "source_type": "research_lab", "title": "Mythical Beasts and Where to Find Them: Mapping the Global Spyware Market and its Threats to National Security and Human Rights", "url": "https://dfrlab.org/2024/09/04/mythical-beasts-and-where-to-find-them-report/"}, {"id": "src-googletag-buying", "license_note": "Report PDF; original published by Google TAG. Copy mirrored by a third party.", "published_date": "2024-02-06", "publisher": "Google Threat Analysis Group", "retrieved_date": "2026-09-24", "source_type": "research_lab", "title": "Buying Spying: Insights into Commercial Surveillance Vendors", "url": "https://business.cch.com/CybersecurityPrivacy/googlespywarereport.pdf"}, {"id": "src-amnesty-predator", "license_note": "Public research report.", "published_date": "2023-10", "publisher": "Amnesty International", "retrieved_date": "2026-09-24", "source_type": "research_lab", "title": "The Predator Files: Caught in the Net — The Global Threat from 'EU Regulated' Spyware", "url": "http://amnesty.nl/content/uploads/2023/10/The-Predator-Files-report.pdf"}, {"id": "src-sekoia-predators", "license_note": "Public research article.", "published_date": null, "publisher": "Sekoia.io", "retrieved_date": "2026-09-24", "source_type": "research_lab", "title": "Predators for Hire: A Global Overview of Commercial Surveillance Vendors", "url": "https://blog.sekoia.io/predators-for-hire-a-global-overview-of-commercial-surveillance-vendors/"}, {"id": "src-meta-cyberroot", "license_note": "News coverage of Meta's Threat Report on the Surveillance-for-Hire Industry (December 2022).", "published_date": "2022-12", "publisher": "YourStory (covering Meta)", "retrieved_date": "2026-09-24", "source_type": "news_investigation", "title": "Meta takes down CyberRoot Risk Advisory's 40 accounts over alleged hacking-for-hire phishing", "url": "https://yourstory.com/2022/12/meta-takes-down-cyberroot-risk-advisorys-40-accounts-900-chinese-accounts"}, {"id": "src-apple-nso-docket", "title": "Apple Inc. v. NSO Group Technologies Limited — docket (No. 3:21-cv-09078)", "publisher": "CourtListener / RECAP (Free Law Project)", "url": "https://www.courtlistener.com/docket/61570971/apple-inc-v-nso-group-technologies-limited/", "published_date": null, "retrieved_date": "2026-09-24", "source_type": "court_record", "license_note": "Court records, public domain."}, {"id": "src-new-gtag-buying-spying", "title": "Buying Spying: Insights into Commercial Surveillance Vendors", "publisher": "Google Threat Analysis Group", "url": "https://business.cch.com/CybersecurityPrivacy/googlespywarereport.pdf", "published_date": "2024-02-06", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-sekoia-predators-hire", "title": "Predators for Hire: A Global Overview of Commercial Surveillance Vendors", "publisher": "Sekoia.io", "url": "https://blog.sekoia.io/predators-for-hire-a-global-overview-of-commercial-surveillance-vendors/", "published_date": null, "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-meta-cyberroot-2022", "title": "Meta takes down CyberRoot Risk Advisory's 40 accounts over alleged hacking-for-hire phishing", "publisher": "YourStory (covering Meta)", "url": "https://yourstory.com/2022/12/meta-takes-down-cyberroot-risk-advisorys-40-accounts-900-chinese-accounts", "published_date": "2022-12", "retrieved_date": "2026-09-24", "source_type": "news_investigation", "license_note": "News coverage of Meta's Threat Report on the Surveillance-for-Hire Industry (December 2022)."}, {"id": "src-new-cl-million-dollar-dissident", "title": "The Million Dollar Dissident: NSO Group's iPhone Zero-Days used against a UAE Human Rights Defender", "publisher": "Citizen Lab", "url": "https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/", "published_date": "2016-08-24", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-cl-kingdom-came-to-canada", "title": "The Kingdom Came to Canada: How Saudi-Linked Digital Espionage Reached Canadian Soil", "publisher": "Citizen Lab", "url": "https://citizenlab.ca/2018/10/the-kingdom-came-to-canada-how-saudi-linked-digital-espionage-reached-canadian-soil/", "published_date": "2018-10-01", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-cl-great-ipwn", "title": "The Great iPwn: Journalists Hacked with Suspected NSO Group iMessage 'Zero-Click' Exploit", "publisher": "Citizen Lab", "url": "https://citizenlab.ca/2020/12/the-great-ipwn-journalists-hacked-with-suspected-nso-group-imessage-zero-click-exploit/", "published_date": "2020-12-20", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-cl-predicting-predator", "title": "Predicting Predator: Egyptian Opposition Targeted with Intellexa's Predator Spyware", "publisher": "Citizen Lab", "url": "https://citizenlab.ca/2023/09/predicting-predator-egyptian-opposition-targeted-with-predator-spyware/", "published_date": "2023-09", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-cl-catalangate", "title": "CatalanGate: Extensive Mercenary Spyware Operation against Catalans Using Pegasus and Candiru", "publisher": "Citizen Lab", "url": "https://citizenlab.ca/2022/04/catalangate-extensive-mercenary-spyware-operation-against-catalans-using-pegasus-and-candiru/", "published_date": "2022-04-18", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-cl-hacking-team-esat", "title": "Hacking Team Reloaded? US-Based Ethiopian Journalists Again Targeted with Spyware", "publisher": "Citizen Lab", "url": "https://citizenlab.ca/2015/03/hacking-team-reloaded-us-based-ethiopian-journalists-again-targeted-with-spyware/", "published_date": "2015-03-09", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-amnesty-forensic-methodology", "title": "Forensic Methodology Report: How to catch NSO Group's Pegasus", "publisher": "Amnesty International", "url": "https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/", "published_date": "2021-07-18", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-amnesty-radi", "title": "Moroccan journalist Omar Radi targeted with network injection attacks (June 2020)", "publisher": "Amnesty International", "url": "https://www.amnesty.org/en/latest/news/2020/06/moroccan-journalist-targeted-with-network-injection-attacks/", "published_date": "2020-06", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}, {"id": "src-new-amnesty-ismayilova", "title": "Forensic confirmation of Pegasus on Khadija Ismayilova's phone (March 2021)", "publisher": "Amnesty International", "url": "https://www.amnesty.org/en/latest/news/2021/03/azerbaijan-khadija-ismayilova-pegasus/", "published_date": "2021-03", "retrieved_date": "2026-09-24", "source_type": "research_lab", "license_note": "Public research report."}]
+[
+ {
+  "id": "src-csl",
+  "license_note": "US government work, public domain.",
+  "published_date": null,
+  "publisher": "International Trade Administration, US Department of Commerce",
+  "retrieved_date": "2026-09-24",
+  "source_type": "government_list",
+  "title": "Consolidated Screening List",
+  "url": "https://www.trade.gov/consolidated-screening-list"
+ },
+ {
+  "id": "src-whatsapp-docket",
+  "license_note": "Court records, public domain.",
+  "published_date": null,
+  "publisher": "CourtListener / RECAP (Free Law Project)",
+  "retrieved_date": "2026-09-24",
+  "source_type": "court_record",
+  "title": "WhatsApp Inc. v. NSO Group Technologies Limited — case filings (No. 4:19-cv-07123)",
+  "url": "https://www.courtlistener.com/docket/16395340/869/whatsapp-inc-v-nso-group-technologies-limited/"
+ },
+ {
+  "id": "src-cl-pegasus-predator",
+  "license_note": "Public research report.",
+  "published_date": "2021-12-16",
+  "publisher": "The Citizen Lab, University of Toronto",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Pegasus vs. Predator: Dissident's Doubly-Infected iPhone Reveals Cytrox Mercenary Spyware",
+  "url": "https://citizenlab.ca/2021/12/pegasusvspredatordissidentsdoublyinfectediphonerevealscytroxmercenaryspyware/"
+ },
+ {
+  "id": "src-cl-torogoz",
+  "license_note": "Public research report.",
+  "published_date": "2022-01-12",
+  "publisher": "The Citizen Lab, University of Toronto",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Project Torogoz: Extensive Hacking of Media & Civil Society in El Salvador with Pegasus Spyware",
+  "url": "https://citizenlab.ca/2022/01/projecttorogozextensivehackingmediacivilsocietyelsalvadorpegasusspyware/"
+ },
+ {
+  "id": "src-dfrlab-mythical",
+  "license_note": "Public research report with accompanying dataset.",
+  "published_date": "2024-09-04",
+  "publisher": "DFRLab, Atlantic Council",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Mythical Beasts and Where to Find Them: Mapping the Global Spyware Market and its Threats to National Security and Human Rights",
+  "url": "https://dfrlab.org/2024/09/04/mythical-beasts-and-where-to-find-them-report/"
+ },
+ {
+  "id": "src-googletag-buying",
+  "license_note": "Report PDF; original published by Google TAG. Copy mirrored by a third party.",
+  "published_date": "2024-02-06",
+  "publisher": "Google Threat Analysis Group",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Buying Spying: Insights into Commercial Surveillance Vendors",
+  "url": "https://business.cch.com/CybersecurityPrivacy/googlespywarereport.pdf"
+ },
+ {
+  "id": "src-amnesty-predator",
+  "license_note": "Public research report.",
+  "published_date": "2023-10",
+  "publisher": "Amnesty International",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "The Predator Files: Caught in the Net — The Global Threat from 'EU Regulated' Spyware",
+  "url": "http://amnesty.nl/content/uploads/2023/10/The-Predator-Files-report.pdf"
+ },
+ {
+  "id": "src-sekoia-predators",
+  "license_note": "Public research article.",
+  "published_date": null,
+  "publisher": "Sekoia.io",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Predators for Hire: A Global Overview of Commercial Surveillance Vendors",
+  "url": "https://blog.sekoia.io/predators-for-hire-a-global-overview-of-commercial-surveillance-vendors/"
+ },
+ {
+  "id": "src-meta-cyberroot",
+  "license_note": "News coverage of Meta's Threat Report on the Surveillance-for-Hire Industry (December 2022).",
+  "published_date": "2022-12",
+  "publisher": "YourStory (covering Meta)",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "title": "Meta takes down CyberRoot Risk Advisory's 40 accounts over alleged hacking-for-hire phishing",
+  "url": "https://yourstory.com/2022/12/meta-takes-down-cyberroot-risk-advisorys-40-accounts-900-chinese-accounts"
+ },
+ {
+  "id": "src-apple-nso-docket",
+  "title": "Apple Inc. v. NSO Group Technologies Limited — docket (No. 3:21-cv-09078)",
+  "publisher": "CourtListener / RECAP (Free Law Project)",
+  "url": "https://www.courtlistener.com/docket/61570971/apple-inc-v-nso-group-technologies-limited/",
+  "published_date": null,
+  "retrieved_date": "2026-09-24",
+  "source_type": "court_record",
+  "license_note": "Court records, public domain."
+ },
+ {
+  "id": "src-new-gtag-buying-spying",
+  "title": "Buying Spying: Insights into Commercial Surveillance Vendors",
+  "publisher": "Google Threat Analysis Group",
+  "url": "https://business.cch.com/CybersecurityPrivacy/googlespywarereport.pdf",
+  "published_date": "2024-02-06",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-sekoia-predators-hire",
+  "title": "Predators for Hire: A Global Overview of Commercial Surveillance Vendors",
+  "publisher": "Sekoia.io",
+  "url": "https://blog.sekoia.io/predators-for-hire-a-global-overview-of-commercial-surveillance-vendors/",
+  "published_date": null,
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-meta-cyberroot-2022",
+  "title": "Meta takes down CyberRoot Risk Advisory's 40 accounts over alleged hacking-for-hire phishing",
+  "publisher": "YourStory (covering Meta)",
+  "url": "https://yourstory.com/2022/12/meta-takes-down-cyberroot-risk-advisorys-40-accounts-900-chinese-accounts",
+  "published_date": "2022-12",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "license_note": "News coverage of Meta's Threat Report on the Surveillance-for-Hire Industry (December 2022)."
+ },
+ {
+  "id": "src-new-cl-million-dollar-dissident",
+  "title": "The Million Dollar Dissident: NSO Group's iPhone Zero-Days used against a UAE Human Rights Defender",
+  "publisher": "Citizen Lab",
+  "url": "https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/",
+  "published_date": "2016-08-24",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-cl-kingdom-came-to-canada",
+  "title": "The Kingdom Came to Canada: How Saudi-Linked Digital Espionage Reached Canadian Soil",
+  "publisher": "Citizen Lab",
+  "url": "https://citizenlab.ca/2018/10/the-kingdom-came-to-canada-how-saudi-linked-digital-espionage-reached-canadian-soil/",
+  "published_date": "2018-10-01",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-cl-great-ipwn",
+  "title": "The Great iPwn: Journalists Hacked with Suspected NSO Group iMessage 'Zero-Click' Exploit",
+  "publisher": "Citizen Lab",
+  "url": "https://citizenlab.ca/2020/12/the-great-ipwn-journalists-hacked-with-suspected-nso-group-imessage-zero-click-exploit/",
+  "published_date": "2020-12-20",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-cl-predicting-predator",
+  "title": "Predicting Predator: Egyptian Opposition Targeted with Intellexa's Predator Spyware",
+  "publisher": "Citizen Lab",
+  "url": "https://citizenlab.ca/2023/09/predicting-predator-egyptian-opposition-targeted-with-predator-spyware/",
+  "published_date": "2023-09",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-cl-catalangate",
+  "title": "CatalanGate: Extensive Mercenary Spyware Operation against Catalans Using Pegasus and Candiru",
+  "publisher": "Citizen Lab",
+  "url": "https://citizenlab.ca/2022/04/catalangate-extensive-mercenary-spyware-operation-against-catalans-using-pegasus-and-candiru/",
+  "published_date": "2022-04-18",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-cl-hacking-team-esat",
+  "title": "Hacking Team Reloaded? US-Based Ethiopian Journalists Again Targeted with Spyware",
+  "publisher": "Citizen Lab",
+  "url": "https://citizenlab.ca/2015/03/hacking-team-reloaded-us-based-ethiopian-journalists-again-targeted-with-spyware/",
+  "published_date": "2015-03-09",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-amnesty-forensic-methodology",
+  "title": "Forensic Methodology Report: How to catch NSO Group's Pegasus",
+  "publisher": "Amnesty International",
+  "url": "https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/",
+  "published_date": "2021-07-18",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-amnesty-radi",
+  "title": "Moroccan journalist Omar Radi targeted with network injection attacks (June 2020)",
+  "publisher": "Amnesty International",
+  "url": "https://www.amnesty.org/en/latest/news/2020/06/moroccan-journalist-targeted-with-network-injection-attacks/",
+  "published_date": "2020-06",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-amnesty-ismayilova",
+  "title": "Forensic confirmation of Pegasus on Khadija Ismayilova's phone (March 2021)",
+  "publisher": "Amnesty International",
+  "url": "https://www.amnesty.org/en/latest/news/2021/03/azerbaijan-khadija-ismayilova-pegasus/",
+  "published_date": "2021-03",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "license_note": "Public research report."
+ },
+ {
+  "id": "src-new-amnesty-intellexa-leaks",
+  "license_note": "Public research report.",
+  "published_date": "2025-12",
+  "publisher": "Amnesty International Security Lab",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "To Catch a Predator: Leak exposes the internal operations of Intellexa's mercenary spyware",
+  "url": "https://securitylab.amnesty.org/latest/2025/12/intellexa-leaks-predator-spyware-operations-exposed/"
+ },
+ {
+  "id": "src-new-amnesty-angola-2026",
+  "license_note": "Public research report.",
+  "published_date": "2026-02",
+  "publisher": "Amnesty International Security Lab",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Journalism under attack: Predator spyware in Angola",
+  "url": "https://securitylab.amnesty.org/latest/2026/02/journalism-under-attack-predator-spyware-in-angola/"
+ },
+ {
+  "id": "src-new-cl-intellexa-conviction",
+  "license_note": "Public research report.",
+  "published_date": "2026-03-05",
+  "publisher": "The Citizen Lab, University of Toronto",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Intellexa Founder, Three Others Sentenced to 8 Years in Prison Over Greek Spyware Scandal",
+  "url": "https://citizenlab.ca/intellexa-founder-three-others-sentenced-to-8-years-in-prison-over-greek-spyware-scandal/"
+ },
+ {
+  "id": "src-new-icij-intellexa-conviction",
+  "license_note": "Public investigative reporting.",
+  "published_date": "2026-02",
+  "publisher": "International Consortium of Investigative Journalists (ICIJ)",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "title": "Greek court convicts Intellexa founder Tal Dilian, three others in wiretapping scandal",
+  "url": "https://www.icij.org/investigations/cyprus-confidential/greek-court-convicts-intellexa-founder-tal-dilian-three-others-in-wiretapping-scandal/"
+ },
+ {
+  "id": "src-new-reuters-intellexa-suit",
+  "license_note": "Public news reporting.",
+  "published_date": "2026-07-07",
+  "publisher": "Reuters",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "title": "Greek wiretapping victims sue spyware firm Intellexa for damages",
+  "url": "https://www.reuters.com/legal/government/greek-wiretapping-victims-sue-spyware-firm-intellexa-damages-2026-07-07/"
+ },
+ {
+  "id": "src-new-techcrunch-meta-cytrox-2021",
+  "license_note": "News coverage of Meta's December 2021 Threat Report on the Surveillance-for-Hire Industry and Citizen Lab's December 2021 Predator findings.",
+  "published_date": "2021-12-16",
+  "publisher": "TechCrunch",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "title": "A new spyware-for-hire, Predator, caught hacking phones of politicians and journalists",
+  "url": "https://techcrunch.com/2021/12/16/cytrox-predator-phone-hacking-meta/"
+ },
+ {
+  "id": "src-new-gtag-cytrox-zerodays",
+  "license_note": "Public research blog post.",
+  "published_date": "2022-05",
+  "publisher": "Google Threat Analysis Group",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "Protecting Android users from 0-day attacks",
+  "url": "https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/"
+ },
+ {
+  "id": "src-new-pegasus-project",
+  "license_note": "Public research report.",
+  "published_date": "2021-07",
+  "publisher": "Forbidden Stories / Amnesty International",
+  "retrieved_date": "2026-09-24",
+  "source_type": "research_lab",
+  "title": "The Pegasus Project",
+  "url": "https://www.amnesty-international.be/sites/default/files/bijlagen/the_pegasus_project.pdf"
+ },
+ {
+  "id": "src-new-darkreading-meta-q42023",
+  "license_note": "News coverage of Meta's Adversarial Threat Report for Q4 2023 (published February 2024).",
+  "published_date": "2024-02",
+  "publisher": "Dark Reading",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "title": "Meta Disrupts 8 Spyware Firms, 3 Fake News Networks",
+  "url": "https://www.darkreading.com/threat-intelligence/meta-disrupts-8-spyware-firms-3-fake-news-networks"
+ },
+ {
+  "id": "src-new-scworld-predator-files",
+  "license_note": "News coverage of Amnesty's Predator Files and Citizen Lab's independent REPLYSPY analysis.",
+  "published_date": "2023-10-09",
+  "publisher": "SC Media",
+  "retrieved_date": "2026-09-24",
+  "source_type": "news_investigation",
+  "title": "'Predator Files' report prompts call for worldwide ban on spyware",
+  "url": "https://www.scworld.com/news/predator-files-report-prompts-call-for-worldwide-ban-on-spyware"
+ }
+]

@@ -1,1 +1,486 @@
-[{"id": "cl-gtag-hermit-italy-gov", "vendor_id": "vendor:rcs-lab", "product_id": "product:hermit", "customer_name": "Italy (law enforcement)", "customer_country": "IT", "claim_strength": "forensically_attributed", "first_reported_year": 2022, "notes": "Google TAG reported that Hermit was used by Italian authorities against targets in Italy, with ISP cooperation in the deployment.", "source_ids": ["src-new-gtag-buying-spying"]}, {"id": "cl-gtag-hermit-kazakhstan-gov", "vendor_id": "vendor:rcs-lab", "product_id": "product:hermit", "customer_name": "Kazakhstan (government)", "customer_country": "KZ", "claim_strength": "forensically_attributed", "first_reported_year": 2022, "notes": "Google TAG reported Hermit deployments in Kazakhstan attributed to government use.", "source_ids": ["src-new-gtag-buying-spying"]}, {"id": "cl-gtag-predator-egypt", "vendor_id": "vendor:intellexa", "product_id": "product:predator", "customer_name": "Egypt", "customer_country": "EG", "claim_strength": "reported", "first_reported_year": 2023, "notes": "Google TAG reported Predator campaigns targeting users in Egypt; the report does not name the specific purchasing agency, so the government-customer link is reported rather than forensically attributed.", "source_ids": ["src-new-gtag-buying-spying"]}, {"id": "cl-sekoia-predator-egypt", "vendor_id": "vendor:intellexa", "product_id": "product:predator", "customer_name": "Egypt", "customer_country": "EG", "claim_strength": "reported", "first_reported_year": 2025, "notes": "Sekoia's 2025 'Predators for Hire' report lists Egypt among reported Predator customer countries, recounting prior public reporting.", "source_ids": ["src-new-sekoia-predators-hire"]}, {"id": "cl-sekoia-predator-greece", "vendor_id": "vendor:intellexa", "product_id": "product:predator", "customer_name": "Greece", "customer_country": "GR", "claim_strength": "reported", "first_reported_year": 2025, "notes": "Sekoia's 2025 'Predators for Hire' report lists Greece among reported Predator customer countries, recounting prior public reporting on the Greek surveillance scandal.", "source_ids": ["src-new-sekoia-predators-hire"]}, {"id": "cl-sekoia-predator-madagascar", "vendor_id": "vendor:intellexa", "product_id": "product:predator", "customer_name": "Madagascar", "customer_country": "MG", "claim_strength": "reported", "first_reported_year": 2025, "notes": "Sekoia's 2025 'Predators for Hire' report lists Madagascar among reported Predator customer countries, recounting prior public reporting.", "source_ids": ["src-new-sekoia-predators-hire"]}, {"id": "cl-nso-saudi-arabia", "vendor_id": "vendor:nso-group", "product_id": "product:pegasus", "customer_name": "Saudi Arabia", "customer_country": "SA", "claim_strength": "reported", "first_reported_year": 2018, "notes": "Citizen Lab attributed Pegasus infections of Saudi dissidents, including Omar Abdulaziz, to Saudi-linked operators.", "source_ids": ["src-new-cl-kingdom-came-to-canada"]}, {"id": "cl-nso-uae", "vendor_id": "vendor:nso-group", "product_id": "product:pegasus", "customer_name": "United Arab Emirates", "customer_country": "AE", "claim_strength": "reported", "first_reported_year": 2016, "notes": "Citizen Lab attributed the Trident exploit targeting Ahmed Mansoor to UAE-linked operators described as 'Stealth Falcon'.", "source_ids": ["src-new-cl-million-dollar-dissident"]}, {"id": "cl-nso-morocco", "vendor_id": "vendor:nso-group", "product_id": "product:pegasus", "customer_name": "Morocco", "customer_country": "MA", "claim_strength": "reported", "first_reported_year": 2020, "notes": "Amnesty's forensic investigations attributed Pegasus targeting of Moroccan journalists, including Omar Radi, to Moroccan authorities.", "source_ids": ["src-new-amnesty-radi"]}, {"id": "cl-nso-rwanda", "vendor_id": "vendor:nso-group", "product_id": "product:pegasus", "customer_name": "Rwanda", "customer_country": "RW", "claim_strength": "reported", "first_reported_year": 2021, "notes": "The Pegasus Project investigation, with Amnesty Security Lab forensic analysis, attributed the targeting of Carine Kanimba to the Rwandan government.", "source_ids": ["src-new-amnesty-forensic-methodology"]}, {"id": "cl-nso-hungary", "vendor_id": "vendor:nso-group", "product_id": "product:pegasus", "customer_name": "Hungary", "customer_country": "HU", "claim_strength": "reported", "first_reported_year": 2021, "notes": "Pegasus Project reporting backed by Amnesty forensics documented Hungarian government use of Pegasus, which Hungarian officials later acknowledged.", "source_ids": ["src-new-amnesty-forensic-methodology"]}, {"id": "cl-nso-el-salvador", "vendor_id": "vendor:nso-group", "product_id": "product:pegasus", "customer_name": "El Salvador", "customer_country": "SV", "claim_strength": "reported", "first_reported_year": 2022, "notes": "Citizen Lab's Project Torogoz investigation found mass Pegasus targeting of journalists and civil society consistent with Salvadoran government use.", "source_ids": ["src-cl-torogoz"]}, {"id": "cl-intellexa-egypt", "vendor_id": "vendor:intellexa", "product_id": "product:predator", "customer_name": "Egypt", "customer_country": "EG", "claim_strength": "reported", "first_reported_year": 2023, "notes": "Citizen Lab attributed the Predator network-injection operation against presidential candidate Ahmed Eltantawy to the Egyptian government.", "source_ids": ["src-new-cl-predicting-predator"]}, {"id": "cl-intellexa-greece", "vendor_id": "vendor:intellexa", "product_id": "product:predator", "customer_name": "Greece", "customer_country": "GR", "claim_strength": "reported", "first_reported_year": 2023, "notes": "Amnesty's Predator Files documented Predator spyware use in Greece, including against journalist Thanasis Koukakis.", "source_ids": ["src-amnesty-predator"]}, {"id": "cl-hackingteam-ethiopia", "vendor_id": "vendor:hacking-team", "product_id": "product:rcs", "customer_name": "Ethiopia", "customer_country": "ET", "claim_strength": "reported", "first_reported_year": 2015, "notes": "Citizen Lab attributed Hacking Team RCS targeting of ESAT journalists to Ethiopian operators.", "source_ids": ["src-new-cl-hacking-team-esat"]}]
+[
+ {
+  "id": "cl-gtag-hermit-italy-gov",
+  "vendor_id": "vendor:rcs-lab",
+  "product_id": "product:hermit",
+  "customer_name": "Italy (law enforcement)",
+  "customer_country": "IT",
+  "claim_strength": "forensically_attributed",
+  "first_reported_year": 2022,
+  "notes": "Google TAG reported that Hermit was used by Italian authorities against targets in Italy, with ISP cooperation in the deployment.",
+  "source_ids": [
+   "src-new-gtag-buying-spying"
+  ]
+ },
+ {
+  "id": "cl-gtag-hermit-kazakhstan-gov",
+  "vendor_id": "vendor:rcs-lab",
+  "product_id": "product:hermit",
+  "customer_name": "Kazakhstan (government)",
+  "customer_country": "KZ",
+  "claim_strength": "forensically_attributed",
+  "first_reported_year": 2022,
+  "notes": "Google TAG reported Hermit deployments in Kazakhstan attributed to government use.",
+  "source_ids": [
+   "src-new-gtag-buying-spying"
+  ]
+ },
+ {
+  "id": "cl-gtag-predator-egypt",
+  "vendor_id": "vendor:intellexa",
+  "product_id": "product:predator",
+  "customer_name": "Egypt",
+  "customer_country": "EG",
+  "claim_strength": "reported",
+  "first_reported_year": 2023,
+  "notes": "Google TAG reported Predator campaigns targeting users in Egypt; the report does not name the specific purchasing agency, so the government-customer link is reported rather than forensically attributed.",
+  "source_ids": [
+   "src-new-gtag-buying-spying"
+  ]
+ },
+ {
+  "id": "cl-sekoia-predator-egypt",
+  "vendor_id": "vendor:intellexa",
+  "product_id": "product:predator",
+  "customer_name": "Egypt",
+  "customer_country": "EG",
+  "claim_strength": "reported",
+  "first_reported_year": 2025,
+  "notes": "Sekoia's 2025 'Predators for Hire' report lists Egypt among reported Predator customer countries, recounting prior public reporting.",
+  "source_ids": [
+   "src-new-sekoia-predators-hire"
+  ]
+ },
+ {
+  "id": "cl-sekoia-predator-greece",
+  "vendor_id": "vendor:intellexa",
+  "product_id": "product:predator",
+  "customer_name": "Greece",
+  "customer_country": "GR",
+  "claim_strength": "reported",
+  "first_reported_year": 2025,
+  "notes": "Sekoia's 2025 'Predators for Hire' report lists Greece among reported Predator customer countries, recounting prior public reporting on the Greek surveillance scandal.",
+  "source_ids": [
+   "src-new-sekoia-predators-hire"
+  ]
+ },
+ {
+  "id": "cl-sekoia-predator-madagascar",
+  "vendor_id": "vendor:intellexa",
+  "product_id": "product:predator",
+  "customer_name": "Madagascar",
+  "customer_country": "MG",
+  "claim_strength": "reported",
+  "first_reported_year": 2025,
+  "notes": "Sekoia's 2025 'Predators for Hire' report lists Madagascar among reported Predator customer countries, recounting prior public reporting.",
+  "source_ids": [
+   "src-new-sekoia-predators-hire"
+  ]
+ },
+ {
+  "id": "cl-nso-saudi-arabia",
+  "vendor_id": "vendor:nso-group",
+  "product_id": "product:pegasus",
+  "customer_name": "Saudi Arabia",
+  "customer_country": "SA",
+  "claim_strength": "reported",
+  "first_reported_year": 2018,
+  "notes": "Citizen Lab attributed Pegasus infections of Saudi dissidents, including Omar Abdulaziz, to Saudi-linked operators.",
+  "source_ids": [
+   "src-new-cl-kingdom-came-to-canada"
+  ]
+ },
+ {
+  "id": "cl-nso-uae",
+  "vendor_id": "vendor:nso-group",
+  "product_id": "product:pegasus",
+  "customer_name": "United Arab Emirates",
+  "customer_country": "AE",
+  "claim_strength": "reported",
+  "first_reported_year": 2016,
+  "notes": "Citizen Lab attributed the Trident exploit targeting Ahmed Mansoor to UAE-linked operators described as 'Stealth Falcon'.",
+  "source_ids": [
+   "src-new-cl-million-dollar-dissident"
+  ]
+ },
+ {
+  "id": "cl-nso-morocco",
+  "vendor_id": "vendor:nso-group",
+  "product_id": "product:pegasus",
+  "customer_name": "Morocco",
+  "customer_country": "MA",
+  "claim_strength": "reported",
+  "first_reported_year": 2020,
+  "notes": "Amnesty's forensic investigations attributed Pegasus targeting of Moroccan journalists, including Omar Radi, to Moroccan authorities.",
+  "source_ids": [
+   "src-new-amnesty-radi"
+  ]
+ },
+ {
+  "id": "cl-nso-rwanda",
+  "vendor_id": "vendor:nso-group",
+  "product_id": "product:pegasus",
+  "customer_name": "Rwanda",
+  "customer_country": "RW",
+  "claim_strength": "reported",
+  "first_reported_year": 2021,
+  "notes": "The Pegasus Project investigation, with Amnesty Security Lab forensic analysis, attributed the targeting of Carine Kanimba to the Rwandan government.",
+  "source_ids": [
+   "src-new-amnesty-forensic-methodology"
+  ]
+ },
+ {
+  "id": "cl-nso-hungary",
+  "vendor_id": "vendor:nso-group",
+  "product_id": "product:pegasus",
+  "customer_name": "Hungary",
+  "customer_country": "HU",
+  "claim_strength": "reported",
+  "first_reported_year": 2021,
+  "notes": "Pegasus Project reporting backed by Amnesty forensics documented Hungarian government use of Pegasus, which Hungarian officials later acknowledged.",
+  "source_ids": [
+   "src-new-amnesty-forensic-methodology"
+  ]
+ },
+ {
+  "id": "cl-nso-el-salvador",
+  "vendor_id": "vendor:nso-group",
+  "product_id": "product:pegasus",
+  "customer_name": "El Salvador",
+  "customer_country": "SV",
+  "claim_strength": "reported",
+  "first_reported_year": 2022,
+  "notes": "Citizen Lab's Project Torogoz investigation found mass Pegasus targeting of journalists and civil society consistent with Salvadoran government use.",
+  "source_ids": [
+   "src-cl-torogoz"
+  ]
+ },
+ {
+  "id": "cl-intellexa-egypt",
+  "vendor_id": "vendor:intellexa",
+  "product_id": "product:predator",
+  "customer_name": "Egypt",
+  "customer_country": "EG",
+  "claim_strength": "reported",
+  "first_reported_year": 2023,
+  "notes": "Citizen Lab attributed the Predator network-injection operation against presidential candidate Ahmed Eltantawy to the Egyptian government.",
+  "source_ids": [
+   "src-new-cl-predicting-predator"
+  ]
+ },
+ {
+  "id": "cl-intellexa-greece",
+  "vendor_id": "vendor:intellexa",
+  "product_id": "product:predator",
+  "customer_name": "Greece",
+  "customer_country": "GR",
+  "claim_strength": "reported",
+  "first_reported_year": 2023,
+  "notes": "Amnesty's Predator Files documented Predator spyware use in Greece, including against journalist Thanasis Koukakis.",
+  "source_ids": [
+   "src-amnesty-predator"
+  ]
+ },
+ {
+  "id": "cl-hackingteam-ethiopia",
+  "vendor_id": "vendor:hacking-team",
+  "product_id": "product:rcs",
+  "customer_name": "Ethiopia",
+  "customer_country": "ET",
+  "claim_strength": "reported",
+  "first_reported_year": 2015,
+  "notes": "Citizen Lab attributed Hacking Team RCS targeting of ESAT journalists to Ethiopian operators.",
+  "source_ids": [
+   "src-new-cl-hacking-team-esat"
+  ]
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "AM",
+  "customer_name": "Armenia",
+  "first_reported_year": 2021,
+  "id": "cl-cl2021-predator-armenia",
+  "notes": "Citizen Lab's December 2021 'Pegasus vs. Predator' report said it was 'likely' that Predator was being used by government customers in Armenia, based on its analysis of Predator infrastructure and the doubly-infected iPhone of Ayman Nour.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-cl-pegasus-predator"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "RS",
+  "customer_name": "Serbia",
+  "first_reported_year": 2021,
+  "id": "cl-cl2021-predator-serbia",
+  "notes": "Citizen Lab's December 2021 'Pegasus vs. Predator' report said it was 'likely' that Predator was being used by government customers in Serbia, based on its analysis of Predator infrastructure and the doubly-infected iPhone of Ayman Nour.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-cl-pegasus-predator"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "ID",
+  "customer_name": "Indonesia",
+  "first_reported_year": 2021,
+  "id": "cl-cl2021-predator-indonesia",
+  "notes": "Citizen Lab's December 2021 'Pegasus vs. Predator' report said it was 'likely' that Predator was being used by government customers in Indonesia, based on its analysis of Predator infrastructure and the doubly-infected iPhone of Ayman Nour.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-cl-pegasus-predator"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "OM",
+  "customer_name": "Oman",
+  "first_reported_year": 2021,
+  "id": "cl-cl2021-predator-oman",
+  "notes": "Citizen Lab's December 2021 'Pegasus vs. Predator' report said it was 'likely' that Predator was being used by government customers in Oman, based on its analysis of Predator infrastructure and the doubly-infected iPhone of Ayman Nour.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-cl-pegasus-predator"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "SA",
+  "customer_name": "Saudi Arabia",
+  "first_reported_year": 2021,
+  "id": "cl-cl2021-predator-saudi-arabia",
+  "notes": "Citizen Lab's December 2021 'Pegasus vs. Predator' report identified Saudi Arabia among the governments it found operating Predator, based on its forensic analysis of Predator infections including the doubly-infected iPhone of Ayman Nour.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-cl-pegasus-predator"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "VN",
+  "customer_name": "Vietnam",
+  "first_reported_year": 2021,
+  "id": "cl-meta2021-predator-vietnam",
+  "notes": "Meta's December 2021 Threat Report on the Surveillance-for-Hire Industry, as reported by TechCrunch, said Cytrox 'had customers in' Vietnam; Meta removed ~300 Facebook and Instagram accounts linked to Cytrox. Separately, Amnesty's Predator Files (2023) reported evidence of Intellexa product sales to Vietnam's Ministry of Public Security and that Google TAG associated the REPLYSPY Predator campaign with 'a government actor in Vietnam'.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-new-techcrunch-meta-cytrox-2021",
+   "src-amnesty-predator"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "PH",
+  "customer_name": "Philippines",
+  "first_reported_year": 2021,
+  "id": "cl-meta2021-predator-philippines",
+  "notes": "Meta's December 2021 Threat Report on the Surveillance-for-Hire Industry, as reported by TechCrunch, said Cytrox 'had customers in' the Philippines; Meta removed ~300 Facebook and Instagram accounts linked to Cytrox.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-new-techcrunch-meta-cytrox-2021"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "DE",
+  "customer_name": "Germany",
+  "first_reported_year": 2021,
+  "id": "cl-meta2021-predator-germany",
+  "notes": "Meta's December 2021 Threat Report on the Surveillance-for-Hire Industry, as reported by TechCrunch, said Cytrox 'had customers in' Germany; Meta removed ~300 Facebook and Instagram accounts linked to Cytrox.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-new-techcrunch-meta-cytrox-2021"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "CO",
+  "customer_name": "Colombia",
+  "first_reported_year": 2021,
+  "id": "cl-meta2021-predator-colombia",
+  "notes": "Meta's December 2021 Threat Report on the Surveillance-for-Hire Industry, as reported by TechCrunch, said Cytrox 'had customers in' Colombia; Meta removed ~300 Facebook and Instagram accounts linked to Cytrox.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-new-techcrunch-meta-cytrox-2021"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "CI",
+  "customer_name": "Cote d'Ivoire",
+  "first_reported_year": 2021,
+  "id": "cl-meta2021-predator-cotedivoire",
+  "notes": "Meta's December 2021 Threat Report on the Surveillance-for-Hire Industry, as reported by TechCrunch, said Cytrox 'had customers in' Cote d'Ivoire. Google TAG's May 2022 analysis independently assessed with high confidence that Cytrox sold Predator exploit packages to government-backed actors in Cote d'Ivoire, used in 2021 campaigns.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-new-techcrunch-meta-cytrox-2021",
+   "src-new-gtag-cytrox-zerodays"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "ES",
+  "customer_name": "Spain",
+  "first_reported_year": 2022,
+  "id": "cl-gtag2022-predator-spain",
+  "notes": "Google TAG assessed 'with high confidence' that Cytrox-packaged zero-day exploit chains were sold to government-backed actors in Spain, who used them in 2021 Predator campaigns against Android devices.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-new-gtag-cytrox-zerodays"
+  ],
+  "vendor_id": "vendor:cytrox"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "SD",
+  "customer_name": "Sudan",
+  "first_reported_year": 2023,
+  "id": "cl-amnesty2023-predator-sudan",
+  "notes": "Amnesty International's Predator Files (October 2023) reported that its Security Lab's analysis of recent Predator technical infrastructure indicated 'likely active customers or targeting of individuals' in Sudan.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-amnesty-predator"
+  ],
+  "vendor_id": "vendor:intellexa"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "KZ",
+  "customer_name": "Kazakhstan",
+  "first_reported_year": 2023,
+  "id": "cl-amnesty2023-predator-kazakhstan",
+  "notes": "Amnesty International's Predator Files (October 2023) reported that its Security Lab's analysis of recent Predator technical infrastructure indicated 'likely active customers or targeting of individuals' in Kazakhstan.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-amnesty-predator"
+  ],
+  "vendor_id": "vendor:intellexa"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "MN",
+  "customer_name": "Mongolia",
+  "first_reported_year": 2023,
+  "id": "cl-amnesty2023-predator-mongolia",
+  "notes": "Amnesty International's Predator Files (October 2023) reported that its Security Lab's analysis of recent Predator technical infrastructure indicated 'likely active customers or targeting of individuals' in Mongolia.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-amnesty-predator"
+  ],
+  "vendor_id": "vendor:intellexa"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "ID",
+  "customer_name": "Indonesia",
+  "first_reported_year": 2023,
+  "id": "cl-amnesty2023-predator-indonesia",
+  "notes": "Amnesty International's Predator Files (October 2023) reported that its Security Lab's analysis of recent Predator technical infrastructure indicated 'likely active customers or targeting of individuals' in Indonesia. (Separate 2021 Citizen Lab finding for Indonesia is recorded in cl-cl2021-predator-indonesia.)",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-amnesty-predator"
+  ],
+  "vendor_id": "vendor:intellexa"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "AO",
+  "customer_name": "Angola",
+  "first_reported_year": 2023,
+  "id": "cl-amnesty2023-predator-angola",
+  "notes": "Amnesty International's Predator Files (October 2023) reported that its Security Lab's analysis of recent Predator technical infrastructure indicated 'likely active customers or targeting of individuals' in Angola. Amnesty later (February 2026) forensically confirmed Predator targeting of Angolan journalist Teixeira Candido in 2024.",
+  "product_id": "product:predator",
+  "source_ids": [
+   "src-amnesty-predator",
+   "src-new-amnesty-angola-2026"
+  ],
+  "vendor_id": "vendor:intellexa"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "AZ",
+  "customer_name": "Azerbaijan",
+  "first_reported_year": 2021,
+  "id": "cl-pegasusproject-azerbaijan",
+  "notes": "The Pegasus Project (Forbidden Stories and 17 media partners, with Amnesty International forensic support) identified Azerbaijan among the governments believed to be NSO Group clients selecting targets; NSO Group denied the allegations.",
+  "product_id": "product:pegasus",
+  "source_ids": [
+   "src-new-pegasus-project"
+  ],
+  "vendor_id": "vendor:nso-group"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "BH",
+  "customer_name": "Bahrain",
+  "first_reported_year": 2021,
+  "id": "cl-pegasusproject-bahrain",
+  "notes": "The Pegasus Project (Forbidden Stories and 17 media partners, with Amnesty International forensic support) identified Bahrain among the governments believed to be NSO Group clients selecting targets; NSO Group denied the allegations.",
+  "product_id": "product:pegasus",
+  "source_ids": [
+   "src-new-pegasus-project"
+  ],
+  "vendor_id": "vendor:nso-group"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "IN",
+  "customer_name": "India",
+  "first_reported_year": 2021,
+  "id": "cl-pegasusproject-india",
+  "notes": "The Pegasus Project (Forbidden Stories and 17 media partners, with Amnesty International forensic support) identified India among the governments believed to be NSO Group clients selecting targets; NSO Group denied the allegations.",
+  "product_id": "product:pegasus",
+  "source_ids": [
+   "src-new-pegasus-project"
+  ],
+  "vendor_id": "vendor:nso-group"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "KZ",
+  "customer_name": "Kazakhstan",
+  "first_reported_year": 2021,
+  "id": "cl-pegasusproject-kazakhstan",
+  "notes": "The Pegasus Project (Forbidden Stories and 17 media partners, with Amnesty International forensic support) identified Kazakhstan among the governments believed to be NSO Group clients selecting targets; NSO Group denied the allegations.",
+  "product_id": "product:pegasus",
+  "source_ids": [
+   "src-new-pegasus-project"
+  ],
+  "vendor_id": "vendor:nso-group"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "MX",
+  "customer_name": "Mexico",
+  "first_reported_year": 2021,
+  "id": "cl-pegasusproject-mexico",
+  "notes": "The Pegasus Project (Forbidden Stories and 17 media partners, with Amnesty International forensic support) identified Mexico among the governments believed to be NSO Group clients selecting targets; reporting described Mexico as NSO's largest client by volume of numbers in the leaked data. NSO Group denied the allegations.",
+  "product_id": "product:pegasus",
+  "source_ids": [
+   "src-new-pegasus-project"
+  ],
+  "vendor_id": "vendor:nso-group"
+ },
+ {
+  "claim_strength": "reported",
+  "customer_country": "TG",
+  "customer_name": "Togo",
+  "first_reported_year": 2021,
+  "id": "cl-pegasusproject-togo",
+  "notes": "The Pegasus Project (Forbidden Stories and 17 media partners, with Amnesty International forensic support) identified Togo among the governments believed to be NSO Group clients selecting targets; NSO Group denied the allegations.",
+  "product_id": "product:pegasus",
+  "source_ids": [
+   "src-new-pegasus-project"
+  ],
+  "vendor_id": "vendor:nso-group"
+ }
+]

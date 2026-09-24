@@ -1,1 +1,104 @@
-[{"date_filed": "2021-11", "date_resolved": null, "docket_url": null, "id": "la-el-2021", "jurisdiction": "United States (BIS)", "outcome": "Added to the Entity List under the Export Administration Regulations.", "source_ids": ["src-csl"], "title": "US Commerce Department adds NSO Group, Candiru, Positive Technologies, and Computer Security Initiative Consultancy PTE (Singapore) to the Entity List", "type": "entity_list", "vendor_ids": ["vendor:nso-group", "vendor:candiru", "vendor:positive-technologies"]}, {"date_filed": "2023-07", "date_resolved": null, "docket_url": null, "id": "la-el-2023", "jurisdiction": "United States (BIS)", "outcome": "Added to the Entity List under the Export Administration Regulations.", "source_ids": ["src-csl"], "title": "US Commerce Department adds Intellexa S.A. (Greece), Intellexa Ltd (Ireland), Cytrox Holdings Zrt (Hungary), and Cytrox AD (North Macedonia) to the Entity List", "type": "entity_list", "vendor_ids": ["vendor:intellexa", "vendor:cytrox"]}, {"date_filed": "2024-03-05", "date_resolved": null, "docket_url": null, "id": "la-ofac-2024", "jurisdiction": "United States (OFAC)", "outcome": "Sanctioned under US Treasury authorities targeting the Intellexa consortium.", "source_ids": ["src-csl"], "title": "US Treasury (OFAC) sanctions Intellexa consortium members", "type": "sanctions", "vendor_ids": ["vendor:intellexa", "vendor:cytrox"]}, {"date_filed": "2019-10", "date_resolved": "2025-11-12", "docket_url": "https://www.courtlistener.com/docket/16395340/869/whatsapp-inc-v-nso-group-technologies-limited/", "id": "la-whatsapp-nso", "jurisdiction": "United States (N.D. Cal.)", "outcome": "Final judgment November 12, 2025: $4,447,190 total ($444,719 compensatory + $4,002,471 punitive after remittitur); permanent injunction barring NSO from targeting WhatsApp.", "source_ids": ["src-whatsapp-docket"], "title": "WhatsApp LLC v. NSO Group Technologies Ltd, No. 4:19-cv-07123 (N.D. Cal.)", "type": "lawsuit", "vendor_ids": ["vendor:nso-group"]}, {"id": "la-apple-nso", "vendor_ids": ["vendor:nso-group"], "type": "lawsuit", "title": "Apple Inc. v. NSO Group Technologies Limited, 3:21-cv-09078 (N.D. Cal.)", "jurisdiction": "United States (N.D. Cal.)", "date_filed": "2021-11-23", "date_resolved": "2024-11-12", "outcome": "Filed November 23, 2021; docket terminated November 12, 2024. Apple reported as having voluntarily dismissed the suit in September 2024, citing risk that continued litigation would expose its threat-intelligence program.", "docket_url": "https://www.courtlistener.com/docket/61570971/apple-inc-v-nso-group-technologies-limited/", "source_ids": ["src-apple-nso-docket"]}]
+[
+ {
+  "date_filed": "2021-11",
+  "date_resolved": null,
+  "docket_url": null,
+  "id": "la-el-2021",
+  "jurisdiction": "United States (BIS)",
+  "outcome": "Added to the Entity List under the Export Administration Regulations.",
+  "source_ids": [
+   "src-csl"
+  ],
+  "title": "US Commerce Department adds NSO Group, Candiru, Positive Technologies, and Computer Security Initiative Consultancy PTE (Singapore) to the Entity List",
+  "type": "entity_list",
+  "vendor_ids": [
+   "vendor:nso-group",
+   "vendor:candiru",
+   "vendor:positive-technologies"
+  ]
+ },
+ {
+  "date_filed": "2023-07",
+  "date_resolved": null,
+  "docket_url": null,
+  "id": "la-el-2023",
+  "jurisdiction": "United States (BIS)",
+  "outcome": "Added to the Entity List under the Export Administration Regulations.",
+  "source_ids": [
+   "src-csl"
+  ],
+  "title": "US Commerce Department adds Intellexa S.A. (Greece), Intellexa Ltd (Ireland), Cytrox Holdings Zrt (Hungary), and Cytrox AD (North Macedonia) to the Entity List",
+  "type": "entity_list",
+  "vendor_ids": [
+   "vendor:intellexa",
+   "vendor:cytrox"
+  ]
+ },
+ {
+  "date_filed": "2024-03-05",
+  "date_resolved": null,
+  "docket_url": null,
+  "id": "la-ofac-2024",
+  "jurisdiction": "United States (OFAC)",
+  "outcome": "Sanctioned under US Treasury authorities targeting the Intellexa consortium.",
+  "source_ids": [
+   "src-csl"
+  ],
+  "title": "US Treasury (OFAC) sanctions Intellexa consortium members",
+  "type": "sanctions",
+  "vendor_ids": [
+   "vendor:intellexa",
+   "vendor:cytrox"
+  ]
+ },
+ {
+  "date_filed": "2019-10",
+  "date_resolved": "2025-11-12",
+  "docket_url": "https://www.courtlistener.com/docket/16395340/869/whatsapp-inc-v-nso-group-technologies-limited/",
+  "id": "la-whatsapp-nso",
+  "jurisdiction": "United States (N.D. Cal.)",
+  "outcome": "Final judgment November 12, 2025: $4,447,190 total ($444,719 compensatory + $4,002,471 punitive after remittitur); permanent injunction barring NSO from targeting WhatsApp.",
+  "source_ids": [
+   "src-whatsapp-docket"
+  ],
+  "title": "WhatsApp LLC v. NSO Group Technologies Ltd, No. 4:19-cv-07123 (N.D. Cal.)",
+  "type": "lawsuit",
+  "vendor_ids": [
+   "vendor:nso-group"
+  ]
+ },
+ {
+  "id": "la-apple-nso",
+  "vendor_ids": [
+   "vendor:nso-group"
+  ],
+  "type": "lawsuit",
+  "title": "Apple Inc. v. NSO Group Technologies Limited, 3:21-cv-09078 (N.D. Cal.)",
+  "jurisdiction": "United States (N.D. Cal.)",
+  "date_filed": "2021-11-23",
+  "date_resolved": "2024-11-12",
+  "outcome": "Filed November 23, 2021; docket terminated November 12, 2024. Apple reported as having voluntarily dismissed the suit in September 2024, citing risk that continued litigation would expose its threat-intelligence program.",
+  "docket_url": "https://www.courtlistener.com/docket/61570971/apple-inc-v-nso-group-technologies-limited/",
+  "source_ids": [
+   "src-apple-nso-docket"
+  ]
+ },
+ {
+  "date_filed": null,
+  "date_resolved": "2026-02",
+  "docket_url": null,
+  "id": "la-intellexa-greece-2026",
+  "jurisdiction": "Greece (Athens)",
+  "outcome": "A Greek court convicted Tal Dilian (Intellexa founder), Sara Hamou, Felix Bitzios and Yiannis Lavranos of breaching the confidentiality of telephone communications and illegally accessing information systems in connection with 2020-2021 Predator surveillance of 90+ Greek public figures; each was sentenced to eight years in prison (aggregate per-defendant sentences reported as 126 years 8 months, actual time capped at eight years), suspended pending appeal. Dilian said the conviction was unfounded, that he would not be a 'scapegoat', and that he would appeal; an appeal hearing was set for December 2026. Separately, in July 2026 eight wiretapping victims sued Intellexa SA seeking 1M euros each in moral damages.",
+  "source_ids": [
+   "src-new-cl-intellexa-conviction",
+   "src-new-icij-intellexa-conviction",
+   "src-new-reuters-intellexa-suit"
+  ],
+  "title": "Greek court convicts Intellexa founder Tal Dilian and three others over Predatorgate wiretapping (Athens)",
+  "type": "criminal_case",
+  "vendor_ids": [
+   "vendor:intellexa"
+  ]
+ }
+]

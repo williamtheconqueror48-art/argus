@@ -1,0 +1,238 @@
+{
+ "generated_utc": "2026-09-24T08:57Z",
+ "method": "live browser_open where available; search-result corroboration otherwise; programmatic for CSL",
+ "status_definitions": {
+  "verified_live": "Page opened live and content checked against cited claims.",
+  "programmatic": "Verified via a working data pull against the real endpoint.",
+  "v0_search_verified": "URL verified verbatim via search during the v0 build.",
+  "search_corroborated": "Title and report contents corroborated via search snippets; page load not confirmed.",
+  "search_sourced": "URL taken from a live search-result listing; page load not yet confirmed.",
+  "needs_live_check": "URL or its support for cited claims could not be confirmed; verify before trusting."
+ },
+ "sources": [
+  {
+   "source_id": "src-csl",
+   "url": "https://www.trade.gov/consolidated-screening-list",
+   "status": "programmatic",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Verified via live pull: scripts/pull_csl.py fetched 26,144 entries from the real trade.gov endpoint; 14 true-positive vendor matches."
+  },
+  {
+   "source_id": "src-whatsapp-docket",
+   "url": "https://www.courtlistener.com/docket/16395340/869/whatsapp-inc-v-nso-group-technologies-limited/",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "CourtListener docket URL verified via API during v0; outcome reflects final judgment."
+  },
+  {
+   "source_id": "src-cl-pegasus-predator",
+   "url": "https://citizenlab.ca/2021/12/pegasusvspredatordissidentsdoublyinfectediphonerevealscytroxmercenaryspyware/",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL verified verbatim via search during v0."
+  },
+  {
+   "source_id": "src-cl-torogoz",
+   "url": "https://citizenlab.ca/2022/01/projecttorogozextensivehackingmediacivilsocietyelsalvadorpegasusspyware/",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL verified verbatim via search during v0."
+  },
+  {
+   "source_id": "src-dfrlab-mythical",
+   "url": "https://dfrlab.org/2024/09/04/mythical-beasts-and-where-to-find-them-report/",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL verified verbatim via search during v0."
+  },
+  {
+   "source_id": "src-googletag-buying",
+   "url": "https://business.cch.com/CybersecurityPrivacy/googlespywarereport.pdf",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "v0 copy of the Google TAG report URL."
+  },
+  {
+   "source_id": "src-amnesty-predator",
+   "url": "http://amnesty.nl/content/uploads/2023/10/The-Predator-Files-report.pdf",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL verified verbatim via search during v0."
+  },
+  {
+   "source_id": "src-sekoia-predators",
+   "url": "https://blog.sekoia.io/predators-for-hire-a-global-overview-of-commercial-surveillance-vendors/",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL verified verbatim via search during v0."
+  },
+  {
+   "source_id": "src-meta-cyberroot",
+   "url": "https://yourstory.com/2022/12/meta-takes-down-cyberroot-risk-advisorys-40-accounts-900-chinese-accounts",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL verified verbatim via search during v0."
+  },
+  {
+   "source_id": "src-apple-nso-docket",
+   "url": "https://www.courtlistener.com/docket/61570971/apple-inc-v-nso-group-technologies-limited/",
+   "status": "v0_search_verified",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "CourtListener docket URL verified via CourtListener API during Tier 2."
+  },
+  {
+   "source_id": "src-new-gtag-buying-spying",
+   "url": "https://business.cch.com/CybersecurityPrivacy/googlespywarereport.pdf",
+   "status": "needs_live_check",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Third-party mirror of Google TAG 'Buying Spying' PDF (honestly labeled as such). Could not confirm the mirror loads; official Google URL not yet located. Replace with primary source when found."
+  },
+  {
+   "source_id": "src-new-sekoia-predators-hire",
+   "url": "https://blog.sekoia.io/predators-for-hire-a-global-overview-of-commercial-surveillance-vendors/",
+   "status": "search_corroborated",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Sekoia blog page found live in search with matching title and body snippets confirming cited pricing/customer claims. Page load not confirmed."
+  },
+  {
+   "source_id": "src-new-meta-cyberroot-2022",
+   "url": "https://yourstory.com/2022/12/meta-takes-down-cyberroot-risk-advisorys-40-accounts-900-chinese-accounts",
+   "status": "needs_live_check",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "YourStory coverage of Meta's Dec 2022 threat report. No direct search snippet seen; page load not confirmed. Verify before treating as verified."
+  },
+  {
+   "source_id": "src-new-cl-million-dollar-dissident",
+   "url": "https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/",
+   "status": "verified_live",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Opened live 2026-09-24. Citizen Lab report on Ahmed Mansoor/Trident/NSO supports inc-ahmed-mansoor and cl-nso-uae."
+  },
+  {
+   "source_id": "src-new-cl-kingdom-came-to-canada",
+   "url": "https://citizenlab.ca/2018/10/the-kingdom-came-to-canada-how-saudi-linked-digital-espionage-reached-canadian-soil/",
+   "status": "verified_live",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Opened live 2026-09-24. Citizen Lab report on Omar Abdulaziz/Pegasus supports inc-omar-abdulaziz and cl-nso-saudi-arabia."
+  },
+  {
+   "source_id": "src-new-cl-great-ipwn",
+   "url": "https://citizenlab.ca/2020/12/the-great-ipwn-journalists-hacked-with-suspected-nso-group-imessage-zero-click-exploit/",
+   "status": "verified_live",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Opened live 2026-09-24. Citizen Lab report on Al Jazeera 36 / KISMET zero-click supports inc-aljazeera-36."
+  },
+  {
+   "source_id": "src-new-cl-predicting-predator",
+   "url": "https://citizenlab.ca/2023/09/predicting-predator-egyptian-opposition-targeted-with-predator-spyware/",
+   "status": "search_corroborated",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Title matches Citizen Lab's Sept 2023 Eltantawy/Predator report; contents corroborated via search. Page load not confirmed."
+  },
+  {
+   "source_id": "src-new-cl-catalangate",
+   "url": "https://citizenlab.ca/2022/04/catalangate-extensive-mercenary-spyware-operation-against-catalans-using-pegasus-and-candiru/",
+   "status": "search_corroborated",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Title matches Citizen Lab's April 2022 CatalanGate report; contents corroborated via search. Page load not confirmed."
+  },
+  {
+   "source_id": "src-new-cl-hacking-team-esat",
+   "url": "https://citizenlab.ca/2015/03/hacking-team-reloaded-us-based-ethiopian-journalists-again-targeted-with-spyware/",
+   "status": "search_corroborated",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Title matches Citizen Lab's 2015 Hacking Team/ESAT report; contents corroborated via search. Page load not confirmed."
+  },
+  {
+   "source_id": "src-new-amnesty-forensic-methodology",
+   "url": "https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/",
+   "status": "search_corroborated",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Title matches Amnesty's July 2021 Forensic Methodology Report; contents corroborated via search. Page load not confirmed."
+  },
+  {
+   "source_id": "src-new-amnesty-radi",
+   "url": "https://www.amnesty.org/en/latest/news/2020/06/moroccan-journalist-targeted-with-network-injection-attacks/",
+   "status": "verified_live",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Opened live 2026-09-24. Amnesty report on Omar Radi network-injection attacks supports inc-omar-radi and cl-nso-morocco."
+  },
+  {
+   "source_id": "src-new-amnesty-ismayilova",
+   "url": "https://www.amnesty.org/en/latest/news/2021/03/azerbaijan-khadija-ismayilova-pegasus/",
+   "status": "search_corroborated",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "Title matches Amnesty's March 2021 Ismayilova forensic confirmation; contents corroborated via search. Page load not confirmed."
+  },
+  {
+   "source_id": "src-new-amnesty-intellexa-leaks",
+   "url": "https://securitylab.amnesty.org/latest/2025/12/intellexa-leaks-predator-spyware-operations-exposed/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-amnesty-angola-2026",
+   "url": "https://securitylab.amnesty.org/latest/2026/02/journalism-under-attack-predator-spyware-in-angola/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-cl-intellexa-conviction",
+   "url": "https://citizenlab.ca/intellexa-founder-three-others-sentenced-to-8-years-in-prison-over-greek-spyware-scandal/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-icij-intellexa-conviction",
+   "url": "https://www.icij.org/investigations/cyprus-confidential/greek-court-convicts-intellexa-founder-tal-dilian-three-others-in-wiretapping-scandal/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-reuters-intellexa-suit",
+   "url": "https://www.reuters.com/legal/government/greek-wiretapping-victims-sue-spyware-firm-intellexa-damages-2026-07-07/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-techcrunch-meta-cytrox-2021",
+   "url": "https://techcrunch.com/2021/12/16/cytrox-predator-phone-hacking-meta/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-gtag-cytrox-zerodays",
+   "url": "https://blog.google/threat-analysis-group/protecting-android-users-from-0-day-attacks/",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-pegasus-project",
+   "url": "https://www.amnesty-international.be/sites/default/files/bijlagen/the_pegasus_project.pdf",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-darkreading-meta-q42023",
+   "url": "https://www.darkreading.com/threat-intelligence/meta-disrupts-8-spyware-firms-3-fake-news-networks",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  },
+  {
+   "source_id": "src-new-scworld-predator-files",
+   "url": "https://www.scworld.com/news/predator-files-report-prompts-call-for-worldwide-ban-on-spyware",
+   "status": "search_sourced",
+   "verified_utc": "2026-09-24T08:57Z",
+   "note": "URL taken from a live search-result listing; page load not yet confirmed. Claims match search-result text."
+  }
+ ]
+}
