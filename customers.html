@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ARGUS — Legal actions</title>
+<title>ARGUS — Reported customers</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,10 +22,14 @@
 </header>
 <div class="wrap">
   <div class="detail-head">
-    <h2>Legal &amp; regulatory actions</h2>
-    <p style="max-width:720px">Lawsuits, Entity List additions, and sanctions recorded as events with primary citations. ARGUS does not declare guilt — it records what was filed, listed, or decided, with the source.</p>
+    <h2>Reported customers</h2>
+    <p style="max-width:720px">Government and agency customers as stated in public reporting — never asserted as fact unless the claim is <span class="cs confirmed">confirmed</span>. Read the label on every row: <a href="methodology.html">methodology</a>.</p>
   </div>
-  <section class="block"><div id="timeline"></div></section>
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="Search customers, vendors, products…" autocomplete="off">
+    <button class="go" id="clear" title="Clear">✕</button>
+  </div>
+  <section class="block"><div id="customers"></div></section>
 </div>
 <footer class="site">
   <div class="wrap">
@@ -36,9 +40,14 @@
 <script src="js/app.js"></script>
 <script>
 loadDB().then(() => {
-  document.getElementById("timeline").innerHTML = renderLegalTimeline();
+  const box = document.getElementById("customers");
+  const q = document.getElementById("q");
+  const render = () => { box.innerHTML = renderCustomers(q.value); };
+  q.addEventListener("input", render);
+  document.getElementById("clear").addEventListener("click", () => { q.value = ""; render(); q.focus(); });
+  render();
 }).catch(e => {
-  document.getElementById("timeline").innerHTML = `<p class="empty">Failed to load data: ${e.message}</p>`;
+  document.getElementById("customers").innerHTML = `<p class="empty">Failed to load data: ${e.message}</p>`;
 });
 </script>
 </body>

@@ -1,5 +1,5 @@
 /* ARGUS shared data layer — static JSON, no backend */
-const DATA_FILES = ["vendors", "products", "corporate_entities", "legal_actions", "sources", "screening_list"];
+const DATA_FILES = ["vendors", "products", "corporate_entities", "legal_actions", "incidents", "customer_links", "sources", "screening_list"];
 const DB = {};
 
 async function loadDB() {
@@ -10,6 +10,7 @@ async function loadDB() {
   DATA_FILES.forEach((f, i) => DB[f] = got[i]);
   DB.sourceById = Object.fromEntries(DB.sources.map(s => [s.id, s]));
   DB.vendorById = Object.fromEntries(DB.vendors.map(v => [v.id, v]));
+  DB.productById = Object.fromEntries(DB.products.map(p => [p.id, p]));
   return DB;
 }
 
@@ -25,6 +26,35 @@ function statusBadge(v) {
 
 function countryBadge(cc) {
   return cc ? `<span class="badge country" title="Headquarters country (ISO)">${esc(cc)}</span>` : "";
+}
+
+function claimBadge(cs) {
+  const labels = { confirmed: "Confirmed", forensically_attributed: "Forensically attributed", reported: "Reported", alleged: "Alleged", denied: "Denied" };
+  return `<span class="cs ${esc(cs)}">${esc(labels[cs] || cs)}</span>`;
+}
+
+function vendorOf(r) {
+  if (r.vendor_id && DB.vendorById[r.vendor_id]) return r.vendor_id;
+  const p = r.product_id && DB.productById[r.product_id];
+  return p ? p.vendor_id : null;
+}
+
+function productName(pid) {
+  const p = pid && DB.productById[pid];
+  return p ? p.name : "—";
+}
+
+function vendorName(vid) {
+  const v = vid && DB.vendorById[vid];
+  return v ? v.name : "—";
+}
+
+function customerLinksFor(vendorId) {
+  return DB.customer_links.filter(c => vendorOf(c) === vendorId);
+}
+
+function incidentsFor(vendorId) {
+  return DB.incidents.filter(i => vendorOf(i) === vendorId);
 }
 
 function sourceLinks(ids) {
@@ -59,6 +89,8 @@ function renderVendorDetail(id) {
   const products = DB.products.filter(p => p.vendor_id === id);
   const entities = DB.corporate_entities.filter(e => e.vendor_id === id);
   const actions = DB.legal_actions.filter(a => (a.vendor_ids || []).includes(id));
+  const clinks = customerLinksFor(id);
+  const vinc = incidentsFor(id);
   const screened = screeningMatchesFor(v);
   const srcs = (v.source_ids || []).map(sid => DB.sourceById[sid]).filter(Boolean);
 
@@ -92,6 +124,27 @@ function renderVendorDetail(id) {
         <p style="font-size:14px">${esc(a.outcome || "")}</p>
         <div class="pub">${a.docket_url ? `<a class="ext" href="${esc(a.docket_url)}" target="_blank" rel="noopener">Case filings (CourtListener)</a> · ` : ""}${sourceLinks(a.source_ids)}</div>
       </div>`).join("") : `<p class="empty">None recorded yet.</p>`}</section>
+
+  <section class="block"><h3>Reported customers (${clinks.length})</h3>
+    ${rows(clinks, [
+      ["Customer", r => esc(r.customer_name)],
+      ["Country", r => esc(r.customer_country || "—")],
+      ["Product", r => esc(productName(r.product_id))],
+      ["Claim strength", r => claimBadge(r.claim_strength)],
+      ["First reported", r => esc(r.first_reported_year || "—")],
+      ["Sources", r => sourceLinks(r.source_ids)],
+    ])}
+    <p class="pub" style="font-size:12px;color:#6b7280">Each link carries a claim-strength label. See the <a href="methodology.html">methodology</a> for what each label means.</p></section>
+
+  <section class="block"><h3>Documented incidents (${vinc.length})</h3>
+    ${rows(vinc, [
+      ["Date", r => esc(r.date || "—")],
+      ["Target", r => esc(r.victim_description)],
+      ["Product", r => esc(productName(r.product_id))],
+      ["Claim strength", r => claimBadge(r.claim_strength)],
+      ["Sources", r => sourceLinks(r.source_ids)],
+    ])}
+    <p class="pub" style="font-size:12px;color:#6b7280">Victim descriptions quote the source's own characterization.</p></section>
 
   <section class="block"><h3>US screening-list hits (${screened.length})</h3>
     ${rows(screened, [
@@ -129,4 +182,42 @@ function renderLegalTimeline() {
       <div class="pub">${a.docket_url ? `<a class="ext" href="${esc(a.docket_url)}" target="_blank" rel="noopener">Case filings</a> · ` : ""}${sourceLinks(a.source_ids)}</div>
     </div>`;
   }).join("");
+}
+
+/* ---- Incidents & Customers pages ---- */
+
+function renderIncidents(filter) {
+  const needle = (filter || "").trim().toLowerCase();
+  const list = [...DB.incidents]
+    .filter(i => !needle || ((i.victim_description || "") + " " + productName(i.product_id) + " " + vendorName(vendorOf(i)) + " " + (i.country || "")).toLowerCase().includes(needle))
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  if (!list.length) return `<p class="empty">No incidents recorded yet.</p>`;
+  return `<table class="rows"><tr><th>Date</th><th>Target</th><th>Product</th><th>Vendor</th><th>Country</th><th>Claim strength</th><th>Sources</th></tr>` +
+    list.map(i => `<tr>
+      <td class="mono">${esc(i.date || "—")}</td>
+      <td>${esc(i.victim_description)}${i.infection_vector && i.infection_vector !== "unknown" ? `<div class="pub" style="font-size:12px">vector: ${esc(i.infection_vector)}</div>` : ""}</td>
+      <td>${esc(productName(i.product_id))}</td>
+      <td>${esc(vendorName(vendorOf(i)))}</td>
+      <td>${esc(i.country || "—")}</td>
+      <td>${claimBadge(i.claim_strength)}</td>
+      <td>${sourceLinks(i.source_ids)}</td>
+    </tr>`).join("") + `</table>`;
+}
+
+function renderCustomers(filter) {
+  const needle = (filter || "").trim().toLowerCase();
+  const list = [...DB.customer_links]
+    .filter(c => !needle || ((c.customer_name || "") + " " + (c.customer_country || "") + " " + vendorName(vendorOf(c)) + " " + productName(c.product_id)).toLowerCase().includes(needle))
+    .sort((a, b) => (a.customer_name || "").localeCompare(b.customer_name || ""));
+  if (!list.length) return `<p class="empty">No customer links recorded yet.</p>`;
+  return `<table class="rows"><tr><th>Customer</th><th>Country</th><th>Vendor</th><th>Product</th><th>Claim strength</th><th>First reported</th><th>Sources</th></tr>` +
+    list.map(c => `<tr>
+      <td>${esc(c.customer_name)}</td>
+      <td>${esc(c.customer_country || "—")}</td>
+      <td>${esc(vendorName(vendorOf(c)))}</td>
+      <td>${esc(productName(c.product_id))}</td>
+      <td>${claimBadge(c.claim_strength)}</td>
+      <td class="mono">${esc(c.first_reported_year || "—")}</td>
+      <td>${sourceLinks(c.source_ids)}</td>
+    </tr>`).join("") + `</table>`;
 }

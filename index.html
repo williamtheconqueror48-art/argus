@@ -13,6 +13,8 @@
     <a class="brand" href="index.html"><h1>ARGUS<span class="eye">◉</span></h1><p>watching the watchers</p></a>
     <nav>
       <a href="index.html">Vendors</a>
+      <a href="incidents.html">Incidents</a>
+      <a href="customers.html">Customers</a>
       <a href="legal.html">Legal actions</a>
       <a href="sources.html">Sources</a>
       <a href="methodology.html">Methodology</a>
@@ -51,6 +53,8 @@ loadDB().then(() => {
   document.getElementById("stats").innerHTML = `
     <div class="stat"><div class="n">${DB.vendors.length}</div><div class="l">Vendors</div></div>
     <div class="stat"><div class="n">${DB.products.length}</div><div class="l">Products</div></div>
+    <div class="stat"><div class="n">${DB.incidents.length}</div><div class="l">Incidents</div></div>
+    <div class="stat"><div class="n">${DB.customer_links.length}</div><div class="l">Customer links</div></div>
     <div class="stat"><div class="n">${DB.corporate_entities.length}</div><div class="l">Corporate entities</div></div>
     <div class="stat"><div class="n">${DB.legal_actions.length}</div><div class="l">Legal actions</div></div>
     <div class="stat"><div class="n">${sl.matches}</div><div class="l">Screening-list hits</div></div>`;

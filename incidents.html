@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARGUS — Documented incidents</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><h1>ARGUS<span class="eye">◉</span></h1><p>watching the watchers</p></a>
+    <nav>
+      <a href="index.html">Vendors</a>
+      <a href="incidents.html">Incidents</a>
+      <a href="customers.html">Customers</a>
+      <a href="legal.html">Legal actions</a>
+      <a href="sources.html">Sources</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+  <div class="detail-head">
+    <h2>Documented incidents</h2>
+    <p style="max-width:720px">Targeting events documented in public forensic or investigative reporting. Victim descriptions quote the source's own characterization — ARGUS does no independent identification. Every row carries a claim-strength label; see the <a href="methodology.html">methodology</a>.</p>
+  </div>
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="Search targets, vendors, products, countries…" autocomplete="off">
+    <button class="go" id="clear" title="Clear">✕</button>
+  </div>
+  <section class="block"><div id="incidents"></div></section>
+</div>
+<footer class="site">
+  <div class="wrap">
+    <p><strong>ARGUS</strong> — watching the watchers.</p>
+    <p>All data from public sources only. See the <a href="methodology.html">methodology</a>.</p>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+<script>
+loadDB().then(() => {
+  const box = document.getElementById("incidents");
+  const q = document.getElementById("q");
+  const render = () => { box.innerHTML = renderIncidents(q.value); };
+  q.addEventListener("input", render);
+  document.getElementById("clear").addEventListener("click", () => { q.value = ""; render(); q.focus(); });
+  render();
+}).catch(e => {
+  document.getElementById("incidents").innerHTML = `<p class="empty">Failed to load data: ${e.message}</p>`;
+});
+</script>
+</body>
+</html>
