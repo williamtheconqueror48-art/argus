@@ -1,0 +1,115 @@
+/* ARGUS — brutalist-simple */
+:root {
+  --ink: #111;
+  --paper: #fdfdfb;
+  --accent: #c1121f;
+  --amber: #b45309;
+  --green: #166534;
+  --blue: #1d4ed8;
+  --gray: #6b7280;
+  --line: 3px solid var(--ink);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+}
+.mono, code, pre { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* header */
+header.site {
+  border-bottom: var(--line);
+  background: var(--ink);
+  color: var(--paper);
+}
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+.brand { text-decoration: none; color: var(--paper); }
+.brand h1 { margin: 0; font-size: 30px; letter-spacing: 4px; font-family: Consolas, monospace; }
+.brand h1 .eye { color: var(--accent); }
+.brand p { margin: 2px 0 0; font-size: 13px; color: #bbb; font-style: italic; }
+nav a { color: var(--paper); text-decoration: none; margin-left: 18px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid transparent; }
+nav a:hover { border-bottom-color: var(--accent); }
+
+/* hero */
+.hero { border-bottom: var(--line); padding: 44px 0 36px; }
+.hero h2 { font-size: 40px; margin: 0 0 10px; line-height: 1.1; }
+.hero h2 .hl { background: var(--ink); color: var(--paper); padding: 0 10px; }
+.hero p { max-width: 720px; font-size: 17px; }
+.stats { display: flex; flex-wrap: wrap; gap: 0; margin-top: 26px; border: var(--line); }
+.stat { flex: 1 1 140px; padding: 14px 16px; border-right: var(--line); }
+.stat:last-child { border-right: 0; }
+.stat .n { font-size: 30px; font-weight: 800; font-family: Consolas, monospace; }
+.stat .l { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--gray); }
+
+/* search */
+.searchbar { margin: 28px 0 8px; display: flex; gap: 0; }
+.searchbar input {
+  flex: 1; font-size: 17px; padding: 12px 14px;
+  border: var(--line); border-right: 0; background: #fff; color: var(--ink);
+}
+.searchbar input:focus { outline: 3px solid var(--accent); outline-offset: -3px; }
+.searchbar .go { border: var(--line); background: var(--ink); color: #fff; padding: 0 22px; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; }
+
+/* vendor grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; margin: 22px 0 60px; }
+.card { border: var(--line); background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.card:hover { box-shadow: 6px 6px 0 var(--ink); transform: translate(-2px, -2px); }
+.card h3 { margin: 0; font-size: 20px; }
+.card h3 a { color: var(--ink); text-decoration: none; border-bottom: 3px solid var(--accent); }
+.card .meta { font-size: 13px; color: var(--gray); }
+.card .desc { font-size: 14px; margin: 0; }
+.card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+
+.badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 9px; border: 2px solid var(--ink); }
+.badge.active { background: #dcfce7; color: var(--green); border-color: var(--green); }
+.badge.rebranded { background: #fef3c7; color: var(--amber); border-color: var(--amber); }
+.badge.acquired { background: #dbeafe; color: var(--blue); border-color: var(--blue); }
+.badge.defunct, .badge.unknown { background: #f3f4f6; color: var(--gray); border-color: var(--gray); }
+.badge.country { background: #fff; }
+.badge.alias { background: #fff; border-style: dashed; color: var(--gray); }
+
+/* claim strength legend */
+.cs { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 9px; border: 2px solid var(--ink); }
+.cs.confirmed { background: #166534; color: #fff; border-color: #166534; }
+.cs.forensically_attributed { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }
+.cs.reported { background: #f59e0b; color: #111; border-color: #92400e; }
+.cs.alleged { background: #fff; color: #92400e; border-color: #92400e; border-style: dashed; }
+.cs.denied { background: #111; color: #fff; border-color: #111; text-decoration: line-through; }
+
+/* detail page */
+.detail-head { border-bottom: var(--line); padding: 30px 0 22px; }
+.detail-head h2 { font-size: 36px; margin: 0 0 8px; }
+.kv { display: grid; grid-template-columns: 180px 1fr; gap: 6px 14px; margin: 18px 0; font-size: 15px; }
+.kv dt { font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; color: var(--gray); }
+.kv dd { margin: 0; }
+section.block { margin: 34px 0; }
+section.block h3 { font-size: 22px; border-bottom: var(--line); padding-bottom: 6px; margin-bottom: 14px; }
+table.rows { width: 100%; border-collapse: collapse; border: var(--line); font-size: 14px; }
+table.rows th, table.rows td { border: 1px solid #999; padding: 10px 12px; text-align: left; vertical-align: top; }
+table.rows th { background: var(--ink); color: #fff; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
+table.rows tr:nth-child(even) td { background: #f7f7f4; }
+a.ext { color: var(--blue); }
+.src-card { border: var(--line); background: #fff; padding: 16px 18px; margin-bottom: 14px; }
+.src-card h4 { margin: 0 0 6px; font-size: 17px; }
+.src-card .pub { font-size: 13px; color: var(--gray); }
+
+/* methodology */
+.legend-row { display: grid; grid-template-columns: 220px 1fr; gap: 14px; align-items: start; padding: 12px 0; border-bottom: 1px solid #ccc; }
+.rules ol li { margin-bottom: 10px; }
+.callout { border: var(--line); background: #fef3c7; padding: 16px 20px; margin: 24px 0; }
+
+footer.site { border-top: var(--line); background: var(--ink); color: #999; padding: 26px 0; font-size: 13px; margin-top: 40px; }
+footer.site a { color: #ddd; }
+footer.site .wrap p { margin: 6px 0; }
+
+.empty { padding: 40px 0; color: var(--gray); font-size: 16px; }
+.back { display: inline-block; margin: 18px 0 0; color: var(--ink); font-weight: 700; }
+@media (max-width: 640px) {
+  .hero h2 { font-size: 30px; }
+  .kv { grid-template-columns: 1fr; }
+  .legend-row { grid-template-columns: 1fr; }
+}

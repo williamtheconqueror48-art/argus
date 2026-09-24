@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARGUS — Methodology</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><h1>ARGUS<span class="eye">◉</span></h1><p>watching the watchers</p></a>
+    <nav>
+      <a href="index.html">Vendors</a>
+      <a href="legal.html">Legal actions</a>
+      <a href="sources.html">Sources</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+  <div class="detail-head">
+    <h2>Methodology</h2>
+    <p style="max-width:720px">How ARGUS stays honest about an industry built on secrecy.</p>
+  </div>
+
+  <section class="block rules">
+    <h3>Claim-strength labels</h3>
+    <p>Every customer link and incident in ARGUS carries a mandatory claim-strength label. Allegations are never stated as fact:</p>
+    <div class="legend-row"><div><span class="cs confirmed">Confirmed</span></div><div>Vendor-stated, court-admitted, or government-acknowledged.</div></div>
+    <div class="legend-row"><div><span class="cs forensically_attributed">Forensically attributed</span></div><div>Technical attribution by Citizen Lab, Amnesty Security Lab, Google Threat Intelligence Group, or equivalent forensic work.</div></div>
+    <div class="legend-row"><div><span class="cs reported">Reported</span></div><div>Reputable investigative reporting (named outlet). The claim exists in print; it is not independently verified by ARGUS.</div></div>
+    <div class="legend-row"><div><span class="cs alleged">Alleged</span></div><div>The claim exists but sourcing is thin, disputed, or denied.</div></div>
+    <div class="legend-row"><div><span class="cs denied">Denied</span></div><div>The vendor or government explicitly denies the claim. Denials are recorded as first-class rows with their own sources — both sides display.</div></div>
+  </section>
+
+  <section class="block rules">
+    <h3>Labeling rules</h3>
+    <ol>
+      <li><strong>Every factual cell has a source.</strong> No source, no row. The provenance spine is not optional.</li>
+      <li><strong>Copy rule:</strong> "Citizen Lab reported that…", "the Predator Files allege…" — never "Vendor X sold to country Y" unless the claim is <span class="cs confirmed">confirmed</span>.</li>
+      <li><strong>Dockets over headlines.</strong> Legal outcomes are quoted from primary records. Example: the WhatsApp v. NSO entry reflects the <em>final</em> judgment (November 12, 2025: $4,447,190 plus a permanent injunction), not the earlier jury figure.</li>
+      <li><strong>No victim PII beyond published reporting.</strong> Victim descriptions quote the source's own characterization; ARGUS does no independent identification work.</li>
+      <li><strong>No live operational data.</strong> No C2 domains, no infection IOCs, no exploit details beyond what the cited public report contains.</li>
+      <li><strong>Corrections are versioned.</strong> Records carry update dates; material corrections get changelog entries. Non-confirmed claims are re-checked, not silently kept.</li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <h3>Hard boundaries (non-goals)</h3>
+    <div class="callout">
+      ARGUS documents the industry; it never ships, links to, or explains how to obtain or operate spyware. No non-public data. No leaked databases mirrored in full. No real-time surveillance feed. No legal conclusions — "sued", "listed", "sanctioned" are recorded as events with citations.
+    </div>
+    <p>Data collection never bypasses access controls: no CAPTCHA, login, or paywall circumvention.</p>
+  </section>
+
+  <section class="block">
+    <h3>Data pipeline</h3>
+    <p>The US Consolidated Screening List is pulled mechanically (free, no key, updated daily) and matched against vendor names and aliases with word-boundary matching; false positives are reviewed and excluded. Curated tables (vendors, products, corporate entities, legal actions, sources) are human-verified against the cited sources. Incident and customer-link curation is the next pass — it ships only with explicit sources and claim-strength labels.</p>
+  </section>
+</div>
+<footer class="site">
+  <div class="wrap">
+    <p><strong>ARGUS</strong> — watching the watchers.</p>
+    <p>All data from public sources only.</p>
+  </div>
+</footer>
+</body>
+</html>

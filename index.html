@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARGUS — Watching the watchers</title>
+<meta name="description" content="ARGUS is an open, sourced database of the commercial spyware industry: vendors, products, corporate structures, and legal actions.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><h1>ARGUS<span class="eye">◉</span></h1><p>watching the watchers</p></a>
+    <nav>
+      <a href="index.html">Vendors</a>
+      <a href="legal.html">Legal actions</a>
+      <a href="sources.html">Sources</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h2>An open database of the <span class="hl">commercial spyware industry</span></h2>
+    <p>Who sells interception capability, what they sell, how they hide behind rebrands and shell companies, and what the law has done about it. Every record carries a named source and a claim-strength label — allegations are never stated as fact.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="Search vendors, aliases, products…" autocomplete="off">
+    <button class="go" id="clear" title="Clear">✕</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>ARGUS</strong> — watching the watchers. An open, sourced database of the commercial spyware industry.</p>
+    <p>All data from public sources only. Allegations are labeled as allegations; denials are recorded. See the <a href="methodology.html">methodology</a>.</p>
+    <p class="mono" id="built"></p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+loadDB().then(() => {
+  const sl = DB.screening_list;
+  document.getElementById("stats").innerHTML = `
+    <div class="stat"><div class="n">${DB.vendors.length}</div><div class="l">Vendors</div></div>
+    <div class="stat"><div class="n">${DB.products.length}</div><div class="l">Products</div></div>
+    <div class="stat"><div class="n">${DB.corporate_entities.length}</div><div class="l">Corporate entities</div></div>
+    <div class="stat"><div class="n">${DB.legal_actions.length}</div><div class="l">Legal actions</div></div>
+    <div class="stat"><div class="n">${sl.matches}</div><div class="l">Screening-list hits</div></div>`;
+  document.getElementById("built").textContent = "data as of " + sl.retrieved_date + " · " + sl.entries_scanned.toLocaleString() + " screening-list entries scanned";
+
+  const grid = document.getElementById("grid");
+  const q = document.getElementById("q");
+  const render = () => {
+    const needle = q.value.trim().toLowerCase();
+    const cards = DB.vendors
+      .filter(v => !needle || (v.name + " " + (v.aliases || []).join(" ") + " " + v.description).toLowerCase().includes(needle))
+      .map(vendorCard).join("");
+    grid.innerHTML = cards || `<p class="empty">No vendors match “${q.value.replace(/[<>&"]/g, "")}”.</p>`;
+  };
+  q.addEventListener("input", render);
+  document.getElementById("clear").addEventListener("click", () => { q.value = ""; render(); q.focus(); });
+  render();
+}).catch(e => {
+  document.getElementById("grid").innerHTML = `<p class="empty">Failed to load data: ${e.message}</p>`;
+});
+</script>
+</body>
+</html>

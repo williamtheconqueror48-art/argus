@@ -1,0 +1,512 @@
+{
+  "source": "US Consolidated Screening List (trade.gov)",
+  "source_url": "https://www.trade.gov/consolidated-screening-list",
+  "data_url": "https://data.trade.gov/downloadable_consolidated_screening_list/v1/consolidated.json",
+  "retrieved_date": "2026-09-24",
+  "csl_search_performed_at": "2026-09-24T08:15:00.015117+00:00",
+  "entries_scanned": 26144,
+  "match_terms": [
+    "Amesys",
+    "Appin",
+    "BellTroX",
+    "Candiru",
+    "Cellebrite",
+    "Circles",
+    "Cobwebs Technologies",
+    "Cognyte",
+    "Computer Security Initiative Consultancy",
+    "Cy4Gate",
+    "CyberRoot Risk Advisory",
+    "Cytrox",
+    "Cytrox AD",
+    "Cytrox Holdings Zrt",
+    "DF Associates",
+    "DSIRF",
+    "Equus Technologies",
+    "FinFisher",
+    "Gamma Group",
+    "Grindavik",
+    "Hacking Team",
+    "InReach Technologies Limited",
+    "Intellexa",
+    "Intellexa Ltd",
+    "Intellexa S.A.",
+    "MSAB",
+    "Memento Labs",
+    "Mollitiam Industries",
+    "NSO Group",
+    "Negg Group",
+    "Nexa Technologies",
+    "Paragon Solutions",
+    "Passitora",
+    "Penlink",
+    "Positive Technologies",
+    "Q Cyber",
+    "Q Cyber Technologies",
+    "QuaDream",
+    "RCS Lab",
+    "REDLattice",
+    "Saito",
+    "Saito Tech",
+    "SaitoTech",
+    "Senpai",
+    "Taveta",
+    "Trovicor",
+    "Variston IT",
+    "Verint Cyber Intelligence",
+    "WiSpear"
+  ],
+  "matches": 14,
+  "entries": [
+    {
+      "csl_id": "fb5fada77912cd3d96a41e2855c7ba75792caeb03b302e047be9b096",
+      "entity_number": null,
+      "name": "NSO Group",
+      "alt_names": [],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "22 Galgalei Haplada, Herzliya",
+          "city": "Tel Aviv-Yafo",
+          "state": "",
+          "postal_code": "4672222",
+          "country": "IL"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "NSO Group"
+      ]
+    },
+    {
+      "csl_id": "a7cc3991b94d0f2ed36e201e1ca79a38aa21df340a17ce02473624b9",
+      "entity_number": null,
+      "name": "Positive Technologies",
+      "alt_names": [],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "8 Preobrzhenskaya Square",
+          "city": "Moscow",
+          "state": "",
+          "postal_code": "107061",
+          "country": "RU"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Positive Technologies"
+      ]
+    },
+    {
+      "csl_id": "6f0f02a7ca2db27ccee218f1bc1410339937087bf22edc39818b335c",
+      "entity_number": null,
+      "name": "Computer Security Initiative Consultancy PTE. LTD.",
+      "alt_names": [
+        "COSEINC"
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "102F Pasir Panjang Rd, #08-02, Citilink Warehouse Complex",
+          "city": "",
+          "state": "",
+          "postal_code": "118530",
+          "country": "SG"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Computer Security Initiative Consultancy"
+      ]
+    },
+    {
+      "csl_id": "1879637c5f096e9d9d86fbf8ab3996a854b5dc832de8cd1c514ef082",
+      "entity_number": null,
+      "name": "Intellexa S.A.",
+      "alt_names": [
+        "Intellexa Anonymi Etaireia"
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "Vouliagmenis Ave. & 14 Hatzievaggelou",
+          "city": "Elliniko",
+          "state": "",
+          "postal_code": "16777",
+          "country": "GR"
+        },
+        {
+          "address": "Leof Vouliagmenis 47",
+          "city": "Elliniko",
+          "state": "",
+          "postal_code": "16777",
+          "country": "GR"
+        },
+        {
+          "address": "Irodou Attikou Streeet 7",
+          "city": "Athens",
+          "state": "",
+          "postal_code": "",
+          "country": "GR"
+        },
+        {
+          "address": "Karaoli Dimitriou 1 & Vasiliss 1",
+          "city": "Athens",
+          "state": "",
+          "postal_code": "15231",
+          "country": "GR"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Intellexa",
+        "Intellexa S.A."
+      ]
+    },
+    {
+      "csl_id": "31780a8565b97113dd3462e932ddb6b3c9b5ab9d85c59aa5a03c6c41",
+      "entity_number": null,
+      "name": "Cytrox Holdings Zrt",
+      "alt_names": [
+        "Cytrox Holdings Zartkoruen Mukodo Reszvenytarsasag"
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "De\u00e1k Ferenc t\u00e9r 3",
+          "city": "Budapest",
+          "state": "",
+          "postal_code": "1052",
+          "country": "HU"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Cytrox",
+        "Cytrox Holdings Zrt"
+      ]
+    },
+    {
+      "csl_id": "0f04c618f69c358cfb2774243e589390753fd033766a8e9a7d40700d",
+      "entity_number": null,
+      "name": "Intellexa Limited",
+      "alt_names": [
+        "Intellexa Ltd"
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "3rd Floor, Ulysses House, Foley Street, Dublin 1",
+          "city": "Dublin",
+          "state": "",
+          "postal_code": "D01W2T2",
+          "country": "IE"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Intellexa",
+        "Intellexa Ltd"
+      ]
+    },
+    {
+      "csl_id": "05600cd8b94f7eeb6dcd1919a2ce269ac1d347fc8547cfc1376a092f",
+      "entity_number": null,
+      "name": "Cytrox AD",
+      "alt_names": [
+        "Sytrox"
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "October 20, no. 1/1-1, Karpos",
+          "city": "Skopje",
+          "state": "",
+          "postal_code": "",
+          "country": "MK"
+        },
+        {
+          "address": "Metropolitan Theodosij Gologanov 44, Karpos",
+          "city": "Skopje",
+          "state": "",
+          "postal_code": "",
+          "country": "MK"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Cytrox",
+        "Cytrox AD"
+      ]
+    },
+    {
+      "csl_id": "c0b9964c6ca603802c185e770186064e246614208db9d8380e24d847",
+      "entity_number": null,
+      "name": "Aktsionernoe Obshchestvo Pozitiv Teknolodzhiz",
+      "alt_names": [
+        "JSC Positive Technologies",
+        "Pozitiv Teknolodzhiz, AO"
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "d. 23A pom. V kom, 30, shosse Shchelkovskoe ",
+          "city": "Moscow ",
+          "state": "",
+          "postal_code": "107241",
+          "country": "RU"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Positive Technologies"
+      ]
+    },
+    {
+      "csl_id": "77b6099ac4f94226166244b3e63c0f9378e51fbf5f1eea7ec6b1ec7d",
+      "entity_number": null,
+      "name": "Candiru",
+      "alt_names": [
+        "Candiru Ltd.",
+        "DF Associates Ltd.",
+        "Grindavik Solutions Ltd.",
+        "Taveta Ltd.",
+        "Saito Tech Ltd.",
+        "Greenwick Solutions",
+        "Tabatha Ltd. "
+      ],
+      "type": null,
+      "source": "Entity List (EL) - Bureau of Industry and Security",
+      "programs": [],
+      "remarks": "",
+      "addresses": [
+        {
+          "address": "21 Haarbaa",
+          "city": "Tel Aviv-Yafo",
+          "state": "",
+          "postal_code": "6473921",
+          "country": "IL"
+        }
+      ],
+      "source_information_url": "https://www.bis.gov/licensing/guidance-on-end-user-and-end-use-controls-and-us-person-controls",
+      "source_list_url": "https://www.bis.gov/regulations/ear/744#supplement-4-744",
+      "matched_terms": [
+        "Candiru",
+        "DF Associates",
+        "Grindavik",
+        "Saito",
+        "Saito Tech",
+        "Taveta"
+      ]
+    },
+    {
+      "csl_id": "31455",
+      "entity_number": "31455",
+      "name": "AKTSIONERNOE OBSHCHESTVO POZITIV TEKNOLODZHIZ",
+      "alt_names": [
+        "JSC POSITIVE TECHNOLOGIES",
+        "POZITIV TEKNOLODZHIZ, AO"
+      ],
+      "type": "Entity",
+      "source": "Specially Designated Nationals (SDN) - Treasury Department",
+      "programs": [
+        "RUSSIA-EO14024",
+        "CAATSA - RUSSIA",
+        "CYBER2",
+        "NPWMD"
+      ],
+      "remarks": "(Linked To: FEDERAL SECURITY SERVICE)",
+      "addresses": [
+        {
+          "address": "d. 23A pom. V kom, 30, shosse Shchelkovskoe",
+          "city": "Moscow",
+          "state": null,
+          "postal_code": "107241",
+          "country": "RU"
+        }
+      ],
+      "source_information_url": "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+      "source_list_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList",
+      "matched_terms": [
+        "Positive Technologies"
+      ]
+    },
+    {
+      "csl_id": "48059",
+      "entity_number": "48059",
+      "name": "INTELLEXA S.A.",
+      "alt_names": [
+        "INTELLEXA ANONYMI ETAIREIA"
+      ],
+      "type": "Entity",
+      "source": "Specially Designated Nationals (SDN) - Treasury Department",
+      "programs": [
+        "CYBER2"
+      ],
+      "remarks": null,
+      "addresses": [
+        {
+          "address": "Vouliagmenis Avenue & 14 Hatzievaggelou",
+          "city": "Elliniko",
+          "state": null,
+          "postal_code": "16777",
+          "country": "GR"
+        },
+        {
+          "address": "Leof Vouliagmenis 47",
+          "city": "Elliniko",
+          "state": null,
+          "postal_code": "16777",
+          "country": "GR"
+        },
+        {
+          "address": "Irodou Attikou Streeet 7",
+          "city": "Athens",
+          "state": null,
+          "postal_code": null,
+          "country": "GR"
+        },
+        {
+          "address": "Karaoli Dimitriou 1 & Vasiliss 1, 15231",
+          "city": "Athens",
+          "state": null,
+          "postal_code": null,
+          "country": "GR"
+        }
+      ],
+      "source_information_url": "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+      "source_list_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList",
+      "matched_terms": [
+        "Intellexa",
+        "Intellexa S.A."
+      ]
+    },
+    {
+      "csl_id": "48064",
+      "entity_number": "48064",
+      "name": "INTELLEXA LIMITED",
+      "alt_names": [
+        "INTELLEXA LTD."
+      ],
+      "type": "Entity",
+      "source": "Specially Designated Nationals (SDN) - Treasury Department",
+      "programs": [
+        "CYBER2"
+      ],
+      "remarks": null,
+      "addresses": [
+        {
+          "address": "3rd Floor Ulysses House, Foley Street, Dublin 1",
+          "city": "Dublin",
+          "state": null,
+          "postal_code": "D01W2T2",
+          "country": "IE"
+        }
+      ],
+      "source_information_url": "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+      "source_list_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList",
+      "matched_terms": [
+        "Intellexa",
+        "Intellexa Ltd"
+      ]
+    },
+    {
+      "csl_id": "48067",
+      "entity_number": "48067",
+      "name": "CYTROX AD",
+      "alt_names": [
+        "SYTROX"
+      ],
+      "type": "Entity",
+      "source": "Specially Designated Nationals (SDN) - Treasury Department",
+      "programs": [
+        "CYBER2"
+      ],
+      "remarks": null,
+      "addresses": [
+        {
+          "address": "October 20, no. 1/1-1, Karpos",
+          "city": "Skopje",
+          "state": null,
+          "postal_code": null,
+          "country": "MK"
+        },
+        {
+          "address": "Metropolitan Theodosij Gologanov 44, Karpos",
+          "city": "Skopje",
+          "state": null,
+          "postal_code": null,
+          "country": "MK"
+        }
+      ],
+      "source_information_url": "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+      "source_list_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList",
+      "matched_terms": [
+        "Cytrox",
+        "Cytrox AD"
+      ]
+    },
+    {
+      "csl_id": "48069",
+      "entity_number": "48069",
+      "name": "CYTROX HOLDINGS ZARTKORUEN MUKODO RESZVENYTARSASAG",
+      "alt_names": [
+        "CYTROX HOLDINGS ZRT."
+      ],
+      "type": "Entity",
+      "source": "Specially Designated Nationals (SDN) - Treasury Department",
+      "programs": [
+        "CYBER2"
+      ],
+      "remarks": null,
+      "addresses": [
+        {
+          "address": "Deak Ferenc Ter 3.",
+          "city": "Budapest",
+          "state": null,
+          "postal_code": "1052",
+          "country": "HU"
+        }
+      ],
+      "source_information_url": "https://home.treasury.gov/policy-issues/financial-sanctions/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+      "source_list_url": "https://sanctionslist.ofac.treas.gov/Home/SdnList",
+      "matched_terms": [
+        "Cytrox",
+        "Cytrox Holdings Zrt"
+      ]
+    }
+  ]
+}

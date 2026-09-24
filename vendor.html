@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARGUS — Vendor detail</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><h1>ARGUS<span class="eye">◉</span></h1><p>watching the watchers</p></a>
+    <nav>
+      <a href="index.html">Vendors</a>
+      <a href="legal.html">Legal actions</a>
+      <a href="sources.html">Sources</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+  <a class="back" href="index.html">← All vendors</a>
+  <div id="detail"></div>
+</div>
+<footer class="site">
+  <div class="wrap">
+    <p><strong>ARGUS</strong> — watching the watchers.</p>
+    <p>All data from public sources only. See the <a href="methodology.html">methodology</a>.</p>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+<script>
+loadDB().then(() => {
+  const id = new URLSearchParams(location.search).get("id");
+  document.getElementById("detail").innerHTML = renderVendorDetail(id);
+  const v = DB.vendorById[id];
+  if (v) document.title = "ARGUS — " + v.name;
+}).catch(e => {
+  document.getElementById("detail").innerHTML = `<p class="empty">Failed to load data: ${e.message}</p>`;
+});
+</script>
+</body>
+</html>
